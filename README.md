@@ -1,38 +1,59 @@
-# 최은비 포트폴리오
+# 최은비 · 시스템 통합 SW 포트폴리오
 
-MANYFARM 중심의 Robotics & Embedded Software 포트폴리오입니다.
+로봇 하드웨어와 상위 소프트웨어를 연결하는 개발 경험을 소개하는 정적 웹 포트폴리오입니다. 반응형 메인 페이지, 프로젝트 상세 페이지 4개, A4 5페이지 인쇄판으로 구성됩니다.
 
-## 구성
-- 소개 1장
-- MANYFARM 2장: 주행·도킹·인계 담당, 진행 중인 작업과 예정 검증 구분
-- POCO 2장: 1차 하드웨어 통신과 2차 모터 제어·캘리브레이션·통합
-- KickCAN 2장: Node 1의 센서 처리·FreeRTOS·CAN 송신
-- PLC 1장: 공정 시퀀스 및 통합 경험
+## 실행
 
-기준일: 2026-09-17. MANYFARM은 진행 중이며 도킹·인계 정량 성과를 아직 기재하지 않았습니다.
+Python 3가 설치된 환경에서 이 폴더를 기준으로 실행합니다.
 
-## 파일
-- `index.html`: 별도 설치 없이 열리는 반응형 페이지. 이미지와 글꼴을 내부에 포함했습니다.
-- `Choi_Eunbi_Portfolio.pdf`: 8장 PDF
-- `.nojekyll`: GitHub Pages 정적 파일 게시용
+```sh
+python -m http.server 8000 --bind 127.0.0.1
+```
 
-## GitHub 게시
-저장소: https://github.com/Hyaline-52/hyaline-52.github.io
+브라우저에서 `http://127.0.0.1:8000`을 엽니다. 별도의 빌드나 패키지 설치는 필요하지 않으며 `index.html`을 직접 열어도 됩니다.
 
-게시 설정:
-1. Hyaline-52 계정에서 `hyaline-52.github.io`라는 public 저장소를 생성합니다.
-2. 이 폴더의 파일을 저장소의 main 브랜치 최상위에 업로드합니다.
-3. Settings → Pages → Build and deployment에서 Deploy from a branch를 선택합니다.
-4. main / (root)를 선택하여 저장합니다.
-5. 게시 완료 후 Pages에 표시되는 Visit site 주소를 확인합니다.
+## 페이지와 파일
 
-사이트 주소: https://hyaline-52.github.io/
-프로필에는 사이트 주소, 사이트 내부에는 GitHub 프로필·프로젝트 코드 링크를 사용합니다.
+- `index.html`: 소개, 기술 경험, 대표 프로젝트, 문제 해결, 이력
+- `manyfarm.html`: MANYFARM 담당 구현과 실물·모의·오프라인 검증 범위
+- `poco.html`: POCO 초기 개발과 고도화, 담당 구현 및 팀 보고서 결과
+- `kickcan.html`: STM32 Node 1 센서 처리, FreeRTOS·Queue·CAN 구현
+- `plc.html`: 공정 제어, 창고 비움·시간 측정·HMI 담당 범위
+- `print.html`: A4 세로 5페이지 포트폴리오
+- `content.js`, `app.js`: 메인·인쇄판 공통 콘텐츠와 화면 구성
+- `style.css`: 공통 웹 디자인과 반응형 스타일
+- `print.css`: A4 레이아웃과 인쇄 스타일
+- `poco.css`: 상세 페이지 공통 스타일 및 POCO 스타일
+- `manyfarm.css`, `kickcan.css`, `plc.css`: 프로젝트별 상세 스타일
+- `assets/favicon.svg`: 사이트 아이콘
+- `assets/github-qr.png`: GitHub 프로필 QR
+- `assets/poco-initial-qr.png`, `assets/poco-upgrade-qr.png`: POCO 초기·고도화 공개 저장소 QR
+- `assets/kickcan-qr.png`: KickCAN Node 1 공개 저장소 QR
 
-공식 안내: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+## PDF 저장
 
-## 수정
-index.html의 각 section이 한 장입니다. MANYFARM의 검증 결과·시연 이미지가 확보되면 해당 두 section을 갱신합니다. 브라우저의 인쇄 / PDF 저장으로 다시 내보낼 수 있습니다. 종이 방향은 가로, 배경 그래픽은 켜고 브라우저 머리글·바닥글은 끄는 것을 권장합니다.
+메뉴의 **PDF 저장**을 누르면 전체 포트폴리오의 인쇄판이 열립니다. 인쇄판에서 **인쇄 / PDF 저장**을 선택합니다.
 
-## 콘텐츠 근거
-첨부 프로필, POCO 1·2차 보고서, KickCAN 발표자료, PLC 발표자료와 최종 프로젝트의 후속 확정사항을 사용했습니다. 9월 9일 MANYFARM 회의 준비자료는 초기 아이디어 참고자료로만 사용했습니다. 원본 프로필 및 발표자료 전체를 공개 파일에 포함하지 않았습니다.
+- 용지: A4 세로
+- 배율: 100%
+- 머리글·바닥글: 끄기
+- 배경 그래픽: 켜기
+
+인쇄판은 5페이지 고정 레이아웃입니다. 좁은 화면에서도 A4 배치를 유지하며, 전체 용지를 보려면 가로로 이동할 수 있습니다. 브라우저·운영체제·인쇄 설정에 따라 결과가 달라질 수 있으므로 저장 전 페이지 수를 확인해 주세요.
+
+## 콘텐츠와 자료
+
+- MANYFARM은 진행 중이며 실물 시험, 모의 통신, 오프라인 검사와 후속 검증을 구분합니다.
+- POCO는 초기·고도화 및 개인 구현·팀 시험 결과를 구분합니다.
+- KickCAN은 Node 1 담당과 Main Node·Node 2의 타 파트 구현을 구분합니다.
+- PLC는 발표자료 기준 구현과 최종 PLC·HMI 원본 검증의 한계를 표시합니다.
+- 승인된 프로필 사진과 프로젝트 이미지 발췌를 사용합니다. MANYFARM 실물 자료와 영상은 미삽입이며 남은 자리 표시자는 실제 결과 화면이 아닙니다.
+- 코드와 커밋은 각 상세 페이지의 공개 GitHub 링크에서 확인할 수 있습니다. 비공개 저장소 링크는 제공하지 않습니다.
+
+웹·인쇄판은 같은 기본 정보를 사용하며, 인쇄판은 담당 구현과 검증 범위를 중심으로 요약합니다. 외부 CDN이나 분석 스크립트는 사용하지 않습니다.
+
+## 디자인 파일
+
+- `theme-a.css`: 화이트·네이비·블루·버건디 A안 웹 스타일
+- `tech-badges.js`: 기존 기술명에 그룹별 SVG 아이콘과 배지 적용
+- `print-a.css`: A4 레이아웃을 유지하는 옅은 A안 인쇄 스타일
