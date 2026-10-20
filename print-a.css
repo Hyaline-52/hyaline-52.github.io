@@ -1,5 +1,29 @@
 /* Print-specific A palette: keep established A4 geometry. */
-.print-view .page-header{border-bottom:1.2pt solid #365D77}.print-view .page-header b span{color:#7D4450}
-.print-view .skills-grid{background:#F4EEF0}.print-view .skills-grid article{background:#EDF3F7}.print-view .skills-grid article:nth-child(2){background:#F4EEF0}.print-view .skills-grid article:nth-child(3){background:#ECF0F5}
-.print-view .number{display:flex;align-items:center;gap:2mm}.print-view .number svg{width:4mm;height:4mm}.print-view .tech{display:flex;gap:1mm;flex-wrap:wrap;margin:2mm 0}.print-view .tech-badge{display:inline-flex;align-items:center;gap:.5mm;background:white;border:.4pt solid #C9D3DC;padding:.3mm .8mm;font-size:6.5pt;color:#365D77;line-height:1.3}.print-view .tech-badge svg{width:2mm;height:2mm;flex-shrink:0}
-.print-view .featured>header{border-bottom:1.2pt solid #365D77}.print-view .status{color:#7D4450;background:#F4EEF0;border:0}.print-view .featured-grid,.print-view .confirmed{background:#EDF3F7}.print-view .pending{background:#F4EEF0}.print-view .confirmed{border-top:1.2pt solid #365D77}.print-view .pending{border-top:1.2pt solid #7D4450}.print-view .flow .owned{background:#F4EEF0}.print-view .personal{background:#F4EEF0}.print-view .project{border-top-color:#365D77}.print-view .page-footer{border-top-color:#365D77}
+.print-view .page-header{border-bottom:1.2pt solid var(--g-link)}.print-view .page-header b span{color:var(--g-link)}
+.print-view .skills-grid{background:var(--g-panel)}.print-view .skills-grid article{background:var(--g-panel)}.print-view .skills-grid article:nth-child(2){background:var(--g-panel)}.print-view .skills-grid article:nth-child(3){background:var(--g-panel)}
+.print-view .number{display:flex;align-items:center;gap:2mm}.print-view .number svg{width:4mm;height:4mm}.print-view .tech{display:flex;gap:1mm;flex-wrap:wrap;margin:2mm 0}.print-view .tech-badge{display:inline-flex;align-items:center;gap:.5mm;background:white;border:.4pt solid var(--g-line);padding:.3mm .8mm;font-size:6.5pt;color:var(--g-link);line-height:1.3}.print-view .tech-badge svg{width:2mm;height:2mm;flex-shrink:0}
+.print-view .featured>header{border-bottom:1.2pt solid var(--g-link)}.print-view .status{color:var(--g-ongoing-ink);background:var(--g-ongoing-bg);border:0}.print-view .featured-grid,.print-view .confirmed{background:var(--g-confirmed-bg)}.print-view .pending{background:var(--g-unverified-bg)}.print-view .confirmed{border-top:1.2pt solid var(--g-confirmed-line)}.print-view .pending{border-top:1.2pt solid var(--g-unverified-line)}.print-view .flow .owned{background:var(--g-owned-bg)}.print-view .personal{background:var(--g-owned-bg)}.print-view .project{border-top-color:var(--g-link)}.print-view .page-footer{border-top-color:var(--g-link)}
+
+/* Green print colors on all five white A4 sheets. */
+.print-view .sheet{--ink:var(--g-ink);--muted:var(--g-muted);--blue:var(--g-link);--accent:var(--g-link);--line:var(--g-line);--panel:var(--g-panel);--diagram:var(--g-panel);color:var(--g-ink)}
+.print-view .sheet .page-header{border-bottom-color:var(--g-link)}
+.print-view .sheet .page-header b span{color:var(--g-link)}
+.print-view .sheet .skills-grid{background:var(--g-panel)}
+.print-view .sheet .skills-grid article{background:var(--g-panel)}
+.print-view .sheet .skills-grid article:nth-child(2){background:white}
+.print-view .sheet .skills-grid article:nth-child(3){background:var(--g-panel)}
+.print-view .sheet .tech-badge{color:var(--g-link);border-color:var(--g-line)}
+.print-view .sheet .featured>header{border-bottom-color:var(--g-link)}
+.print-view .sheet .status{background:var(--g-ongoing-bg);color:var(--g-ongoing-ink);border:1px solid var(--g-ongoing-line)}
+.print-view .sheet .featured-grid{background:white}
+.print-view .sheet .confirmed{background:var(--g-confirmed-bg);border-color:var(--g-confirmed-line)}
+.print-view .sheet .pending{background:white;border-color:var(--g-unverified-line);border-top-style:dashed}
+.print-view .sheet .flow .owned{background:var(--g-owned-bg);border-color:var(--g-owned-line)}
+.print-view .sheet .personal{background:var(--g-owned-bg)}
+.print-view .sheet .page-footer{border-top-color:var(--g-link)}
+
+.print-view{background:var(--g-page)}
+.print-view .project{border-top-color:var(--g-link)}
+.print-view #print-button{background:var(--g-deep);color:var(--g-surface)}
+.print-view #print-button:hover{background:var(--g-link)}
+.print-view #print-button:active{background:var(--g-ink)}
