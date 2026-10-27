@@ -3,3 +3,40 @@
 @media(max-width:600px){.poco-hero h1{font-size:35px}.verification-records article{grid-template-columns:1fr;gap:16px;padding:24px 0}.verification-records h3{font-size:20px}.verification-records p{font-size:14px}.mf-flow li{padding:17px 12px}.mf-flow span{font-size:13px}.scope-rows p{font-size:14px}.phase-pair{gap:30px}.vertical-flow>span{font-size:12px}.transfer-list li{font-size:13px}.ongoing-note{font-size:13px}}
 
 .mf-flow li.future:before{content:"";border-left:2px dashed var(--accent);height:25px;bottom:calc(100% + 4px)}
+
+/* MANYFARM-only typography and information spacing; existing layout and colors retained. */
+body.manyfarm-page .poco-hero .back-link{margin-bottom:34px}
+body.manyfarm-page .poco-hero h1{line-height:1.3;letter-spacing:-1px;margin-top:22px;margin-bottom:30px}
+body.manyfarm-page .poco-hero .lead{max-width:42em;line-height:1.85}
+body.manyfarm-page .poco-hero .hero-meta{gap:12px 32px;margin-top:32px;margin-bottom:0;line-height:1.8}
+body.manyfarm-page .poco-hero>.small{margin-top:24px;max-width:64em;line-height:1.8;font-size:13px}
+body.manyfarm-page .poco-hero .ongoing-note{margin-top:16px;line-height:1.8}
+body.manyfarm-page .section-head h2{line-height:1.4;letter-spacing:-.6px;text-wrap:balance}
+body.manyfarm-page #overview .section-head{margin-bottom:28px}
+body.manyfarm-page #overview h2{max-width:29em}
+body.manyfarm-page #overview>p{max-width:62em;line-height:1.85}
+body.manyfarm-page #overview>.phase-pair{margin-top:32px;align-items:start}
+body.manyfarm-page #overview .phase-pair .placeholder{margin-top:0}
+body.manyfarm-page #overview .phase-pair h3{margin-bottom:20px;line-height:1.5}
+body.manyfarm-page #overview ul{margin:0 0 26px;padding-left:22px;line-height:1.85}
+body.manyfarm-page #overview li+li{margin-top:10px}
+body.manyfarm-page #overview .phase-pair p{line-height:1.85}
+body.manyfarm-page #overview .phase-pair p+p{margin-top:18px}
+body.manyfarm-page :is(.implementation-list,.trouble-grid,.verification-records) p{line-height:1.8}
+body.manyfarm-page .implementation-list h3{line-height:1.5;margin-bottom:18px}
+body.manyfarm-page .implementation-list p+p{margin-top:16px}
+@media(max-width:600px){
+ body.manyfarm-page .poco-hero .back-link{margin-bottom:28px}
+ body.manyfarm-page .poco-hero h1{line-height:1.35;letter-spacing:-.6px;margin-top:20px;margin-bottom:26px}
+ body.manyfarm-page .poco-hero .lead{line-height:1.85}
+ body.manyfarm-page .poco-hero .hero-meta{gap:10px 22px;margin-top:28px}
+ body.manyfarm-page .poco-hero>.small{margin-top:22px;line-height:1.8}
+ body.manyfarm-page .poco-hero .ongoing-note{margin-top:16px}
+ body.manyfarm-page .section-head h2{line-height:1.45;letter-spacing:-.4px}
+ body.manyfarm-page #overview>.phase-pair{margin-top:28px}
+ body.manyfarm-page #overview .phase-pair .placeholder{margin-bottom:0}
+ body.manyfarm-page #overview ul{margin-bottom:26px;line-height:1.85}
+ body.manyfarm-page #overview li+li{margin-top:12px}
+}
+
+@media(max-width:600px){body.manyfarm-page .poco-hero .lead .hero-lead-break{display:none}}
