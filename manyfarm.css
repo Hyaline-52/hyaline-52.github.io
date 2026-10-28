@@ -40,3 +40,21 @@ body.manyfarm-page .implementation-list p+p{margin-top:16px}
 }
 
 @media(max-width:600px){body.manyfarm-page .poco-hero .lead .hero-lead-break{display:none}}
+
+/* MANYFARM AprilTag comparison media only; source media remains unchanged. */
+body.manyfarm-page .mf-tag-compare{margin:0;min-width:0}
+body.manyfarm-page .mf-tag-video{position:relative;aspect-ratio:960/856}
+body.manyfarm-page .mf-tag-video video{display:block;width:100%;height:auto;aspect-ratio:960/856;object-fit:contain;background:var(--g-surface)}
+body.manyfarm-page .mf-tag-labels{position:absolute;inset:8px 8px auto;display:grid;grid-template-columns:1fr 1fr;pointer-events:none}
+body.manyfarm-page .mf-tag-labels span{justify-self:start;padding:4px 10px;font-size:13px;line-height:1.4;font-weight:700;color:var(--g-surface);background:var(--g-muted)}
+body.manyfarm-page .mf-tag-labels span+span{margin-left:8px;background:var(--g-deep)}
+body.manyfarm-page .mf-tag-compare figcaption{margin-top:12px;font-size:13px;line-height:1.65;color:var(--g-muted)}
+body.manyfarm-page .mf-tag-compare figcaption strong,body.manyfarm-page .mf-tag-compare figcaption span,body.manyfarm-page .mf-tag-compare figcaption small{display:block}
+body.manyfarm-page .mf-tag-compare figcaption strong{font-weight:600}
+body.manyfarm-page .mf-tag-compare figcaption small{margin-top:6px;font-size:12px}
+
+/* Tablet overview only: preserve desktop and mobile layouts. */
+@media(min-width:601px) and (max-width:900px){
+ body.manyfarm-page #overview > .phase-pair{grid-template-columns:minmax(0,1fr);gap:32px}
+ body.manyfarm-page #overview > .phase-pair .mf-tag-compare{max-width:520px;margin-inline:auto}
+}
