@@ -1,0 +1,98 @@
+/* POCO-only typography and visual preview; shared files remain unchanged. */
+body.poco-page section[id] p + p{margin-top:var(--poco-paragraph-gap)}
+body.poco-page section[id] li{margin-block:8px}
+body.poco-page .public-subsection{margin-top:32px}
+body.poco-page .public-subsection h3{margin-bottom:16px}
+body.poco-page #verification table{width:100%;border-collapse:collapse;margin:24px 0}
+body.poco-page #verification th,body.poco-page #verification td{text-align:left;border-bottom:1px solid var(--line);padding:14px 16px}
+body.poco-page #verification th{background:var(--panel)}
+body.poco-page #references a{overflow-wrap:anywhere}
+@media(min-width:601px) and (max-width:900px){body.poco-page #overview>.phase-pair{grid-template-columns:minmax(0,1fr);gap:32px}}
+body.poco-page #overview>.phase-pair{margin-top:24px}
+
+/* POCO visual preview: all additions isolated from shared portfolio styles. */
+body.poco-page .poco-hero h1{line-height:1.24;letter-spacing:-.035em}
+body.poco-page .poco-hero .lead{line-height:1.85;text-wrap:pretty}
+body.poco-page #overview .phase-pair{gap:40px}
+body.poco-page #overview .phase-pair article{min-width:0;padding:32px}
+body.poco-page #overview .phase-pair article>p{line-height:1.85}
+body.poco-page #overview .project-figure{margin:28px 0 30px}
+body.poco-page #overview .project-figure img{width:auto;max-width:100%;max-height:280px;object-fit:contain;margin-inline:auto}
+body.poco-page #overview .project-figure.compact img{max-width:345px;width:100%}
+body.poco-page .poco-demo{width:100%;max-width:700px;margin:32px auto 40px;min-width:0}
+body.poco-page .poco-demo video{display:block;width:100%;height:auto;object-fit:contain;background:#111;border-radius:8px}
+body.poco-page .poco-demo figcaption{margin-top:14px;font-size:14px;line-height:1.7;color:#526457}
+body.poco-page .poco-demo figcaption strong,body.poco-page .poco-demo figcaption span{display:block}
+body.poco-page .poco-demo figcaption strong{color:#273c32;font-weight:600;margin-bottom:4px}
+body.poco-page .poco-motion-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;margin:32px 0}
+body.poco-page #upgrade .poco-motion-grid>.architecture-panel{margin:0;padding:24px;min-width:0}
+body.poco-page .poco-motion-grid .poco-demo{margin:0;max-width:520px}
+body.poco-page .vertical-flow>div{line-height:1.65;min-width:0;overflow-wrap:anywhere}
+body.poco-page .vertical-flow small{display:block;font-size:13px;font-weight:400;line-height:1.65;color:#526457;margin:7px 0}
+body.poco-page .vertical-flow .personal-node{background:#f1f6ee;border-color:#315342}
+body.poco-page .flow-end{display:block;margin-top:8px}
+body.poco-page .poco-alarm-flow{display:flex;flex-direction:column;gap:8px;align-items:center;padding:22px;margin:22px 0;background:#f5f7f3;border-left:3px solid #9aaa8c;text-align:center;line-height:1.65}
+body.poco-page .poco-alarm-flow small{font-size:13px;color:#526457}
+body.poco-page .poco-evidence{margin-top:32px;border-top:1px solid #d8e3cd;padding-top:20px}
+body.poco-page .poco-evidence summary{cursor:pointer;color:#315342;line-height:1.7;padding:8px 0}
+
+
+
+
+
+
+body.poco-page #verification .poco-metrics{display:block;border:0;margin:28px 0 36px}
+body.poco-page .poco-metrics thead{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+body.poco-page .poco-metrics tbody{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+body.poco-page .poco-metrics tr{display:flex;flex-direction:column-reverse;grid-column:span 2;padding:24px;background:#eef5e8;border-top:2px solid #315342;border-radius:4px}
+body.poco-page #verification .poco-metrics td{display:block;border:0;padding:0;background:transparent}
+body.poco-page .poco-metrics td:first-child{margin-top:10px;color:#526457}
+body.poco-page .poco-metrics strong{font-size:38px;line-height:1.2;white-space:nowrap;letter-spacing:-.035em;color:#1a3a2e}
+body.poco-page .poco-metrics tr:nth-child(n+4){grid-column:span 3;background:#f7f9f5;border-top:1px solid #d8e3cd;padding:20px 24px}
+body.poco-page .poco-metrics tr:nth-child(n+4) strong{font-size:28px}
+body.poco-page section[id]{scroll-margin-top:90px}
+body.poco-page summary:focus-visible,body.poco-page video:focus-visible{outline:3px solid #315342;outline-offset:4px}
+
+@media(max-width:900px){body.poco-page #overview>.phase-pair,body.poco-page .poco-motion-grid{grid-template-columns:minmax(0,1fr);gap:32px}body.poco-page .poco-motion-grid .poco-demo{margin-inline:auto}body.poco-page .poco-metrics strong{font-size:32px}}
+@media(max-width:600px){body.poco-page .poco-lead-break{display:none}body.poco-page .poco-hero .lead{max-width:34em;text-wrap:balance}body.poco-page .poco-demo{margin-block:24px 32px}body.poco-page #upgrade .poco-motion-grid>.architecture-panel{padding:18px 14px}body.poco-page .poco-metrics tbody{grid-template-columns:1fr 1fr;gap:12px}body.poco-page .poco-metrics tr,body.poco-page .poco-metrics tr:nth-child(n+4){grid-column:span 1;padding:18px 14px}body.poco-page .poco-metrics tr:first-child{grid-column:1/-1}body.poco-page .poco-metrics strong{font-size:30px}body.poco-page .poco-metrics td:first-child{font-size:14px}}
+@media(prefers-reduced-motion:reduce){body.poco-page{scroll-behavior:auto}}
+
+/* Reading rhythm: prose is constrained independently of diagrams and media. */
+body.poco-page{--poco-prose:760px;--poco-paragraph-gap:18px;--poco-body-leading:1.85}
+body.poco-page section[id] p,body.poco-page section[id] li{line-height:var(--poco-body-leading)}
+body.poco-page section[id]>.section-head{margin-bottom:26px}
+body.poco-page .section-head h2{line-height:1.42;letter-spacing:-.035em;text-wrap:pretty}
+body.poco-page section[id]>p,body.poco-page .public-subsection{max-width:var(--poco-prose)}
+body.poco-page section[id] h3{line-height:1.5;letter-spacing:-.025em;text-wrap:pretty}
+body.poco-page .term-unit,body.poco-page code{white-space:nowrap;overflow-wrap:normal;word-break:normal}
+body.poco-page #overview .phase-label{margin-bottom:18px}
+body.poco-page #overview .phase-pair article>p:first-of-type{font-size:21px;line-height:1.5;margin-bottom:18px}
+body.poco-page #overview figcaption{margin-top:12px;font-size:13px;line-height:1.75}
+body.poco-page #overview figure+p{border-top:1px solid #d8e3cd;padding-top:24px;margin-top:0}
+body.poco-page #overview ul{padding-left:20px;margin:16px 0 24px}
+body.poco-page #overview ul+p{border-top:1px solid #d8e3cd;padding-top:20px;color:#526457}
+body.poco-page :is(#initial,#upgrade) .implementation-list{margin-top:40px}
+body.poco-page :is(#initial,#upgrade) .implementation-list article{grid-template-columns:40px minmax(0,1fr);gap:20px;padding:32px;margin:0 0 24px}
+body.poco-page :is(#initial,#upgrade) .implementation-list article>div{min-width:0}
+body.poco-page :is(#initial,#upgrade) .implementation-list h3{margin:0 0 20px;font-size:23px}
+body.poco-page :is(#initial,#upgrade) .implementation-list p{max-width:var(--poco-prose)}
+body.poco-page .implementation-list .number{font-size:18px;line-height:1.9;font-weight:500;letter-spacing:0}
+body.poco-page #trouble .implementation-list{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin-top:32px}
+body.poco-page #trouble .implementation-list article{display:grid;grid-template-columns:minmax(200px,.72fr) minmax(0,1.8fr);gap:40px;padding:36px;border:1px solid #d8e3cd;border-top:2px solid #315342;background:#fff}
+body.poco-page #trouble .case-heading .number{display:block;margin-bottom:14px}
+body.poco-page #trouble h3{font-size:23px;line-height:1.6;margin:0}
+body.poco-page #trouble .case-body{max-width:var(--poco-prose);min-width:0}
+body.poco-page #trouble .case-body>p:has(>strong){font-size:14px;font-weight:600;color:#315342;margin-top:28px;margin-bottom:10px}
+body.poco-page #trouble .case-body>p:first-child{margin-top:0}
+body.poco-page #trouble .case-body>p:has(>strong)+p{margin-top:0}
+body.poco-page #verification .poco-metrics tr{padding:28px}
+body.poco-page #verification .poco-metrics tr:nth-child(n+4){padding:22px 28px}
+body.poco-page #verification .poco-metrics strong{font-variant-numeric:tabular-nums}
+body.poco-page #verification .public-subsection{margin-top:36px}
+body.poco-page #references>p:has(>strong){margin-top:30px;margin-bottom:12px;font-size:14px;letter-spacing:.04em}
+body.poco-page #references ul{padding-left:20px;max-width:var(--poco-prose);margin:16px 0 30px}
+body.poco-page #references li{margin-block:14px}
+body.poco-page #references .public-subsection{border-top:1px solid #d8e3cd;padding-top:28px}
+body.poco-page .section-nav{scroll-padding-inline:12px;scrollbar-width:thin;scrollbar-color:#9aaa8c transparent}
+@media(max-width:900px){body.poco-page #trouble .implementation-list article{grid-template-columns:minmax(0,1fr);gap:26px;padding:30px}body.poco-page #trouble .case-heading{max-width:650px}}
+@media(max-width:600px){body.poco-page{--poco-paragraph-gap:16px}body.poco-page #overview .phase-pair article{padding:24px 20px}body.poco-page :is(#initial,#upgrade) .implementation-list article{display:block;padding:26px 20px;margin-bottom:20px}body.poco-page :is(#initial,#upgrade) .implementation-list .number{display:block;margin-bottom:10px}body.poco-page :is(#initial,#upgrade) .implementation-list h3{font-size:22px;margin-bottom:18px}body.poco-page #trouble .implementation-list article{padding:26px 20px;gap:24px}body.poco-page #trouble h3{font-size:22px}body.poco-page #verification .poco-metrics tr,body.poco-page #verification .poco-metrics tr:nth-child(n+4){padding:20px 14px}body.poco-page .section-head h2{line-height:1.45}body.poco-page .poco-hero .lead{text-wrap:pretty}}
