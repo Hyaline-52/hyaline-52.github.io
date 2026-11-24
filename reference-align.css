@@ -1,0 +1,859 @@
+/* Web-only reference alignment. The dedicated PDF bundle does not load this file. */
+@font-face{font-family:Pretendard;src:url('assets/fonts/PretendardVariable.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@media screen{
+body{font-family:Pretendard,'Malgun Gothic',sans-serif;line-height:1.75}
+.wrap{width:min(1160px,calc(100% - 96px))}
+.site-header{gap:25px;padding-inline:max(48px,calc((100% - 1160px)/2))}
+.site-header nav{gap:22px;font-weight:650}
+.eyebrow{font-size:12px;letter-spacing:1.5px;margin-bottom:16px;color:var(--muted)}
+.date,.role>span,.project-link,.capabilities a,.section-heading sup,.feature-work span,.flow small,.result-strip strong,.site-header nav a[aria-current]{color:var(--ink)}
+.hero{background:#f2f8f8;border-bottom:0;padding:24px 0 12px}
+.hero>.wrap{background:white;border:1px solid var(--line);border-radius:8px;padding:22px 30px;box-shadow:0 8px 30px #29376206}
+.hero-top{font-size:10px;letter-spacing:1.8px;font-weight:650}
+.hero-layout{grid-template-columns:minmax(0,1fr) 320px;gap:45px;padding:20px 0}
+.hero h1{font-size:40px;line-height:1.35;letter-spacing:-1.6px;font-weight:750}
+.hero-description{font-size:17px;line-height:1.8;max-width:620px;margin-top:18px}
+.hero .actions{margin-top:20px;gap:12px}
+.hero .tags{gap:7px;margin:18px 0 0}
+.hero .tags li{font-size:12px;font-weight:600;line-height:1.5;padding:5px 10px;border-radius:5px}
+.profile-card{width:320px;max-width:100%;padding:0;border:0;background:transparent;box-shadow:none}
+.profile-card .portrait{height:285px;background:transparent;border:0;border-radius:0;padding:0}
+.portrait img{background:transparent}
+.profile-caption{padding:9px 0}
+.profile-caption h2{font-size:23px;letter-spacing:-.7px}
+.profile-caption h2 span{font-size:12px;font-weight:450;margin-left:8px}
+.profile-caption p{font-size:12px}
+.profile-note,.hero-summary{display:none}
+.journey-section{background:white;border-top:0;padding:24px 0 30px}
+.journey-grid{grid-template-columns:170px 1fr;gap:30px}
+.journey-intro h2{font-size:28px;margin-bottom:8px}
+.journey-intro>.muted{display:none}
+.timeline{display:flex;flex-direction:column;gap:14px}
+.timeline li{padding-bottom:0}
+.timeline h3{font-size:18px;margin:2px 0 4px}
+.timeline p{font-size:14px;line-height:1.6}
+.timeline .date{font-size:11px}
+.qualifications{margin-top:24px;padding-top:20px;gap:30px}
+.block{padding-block:85px}
+.section-heading{margin-bottom:32px}
+.section-heading h2{font-size:34px;line-height:1.35;letter-spacing:-1.4px}
+.section-heading>p{font-size:13px;max-width:240px}
+.capabilities{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.capabilities article{border:1px solid var(--line);border-top:3px solid #164e63;border-radius:3px;padding:28px 30px;background:white}
+.capabilities article:nth-child(even){border-top-color:#14b8a6}
+.capabilities h3{font-size:23px;line-height:1.45;margin:0 0 10px;letter-spacing:-.7px}
+.capabilities a,.experience-projects{font-size:13px;font-weight:550;line-height:1.7}
+.capabilities ul{font-size:15px;line-height:1.85;padding-left:19px;margin:18px 0 0}
+.capabilities li+li{margin-top:9px}
+.capabilities li{padding-left:3px}
+.capabilities li::marker{color:#0d9488}
+.capabilities a{color:#087f85;text-decoration:none}
+.capabilities a:hover{text-decoration:underline;color:var(--ink)}
+.featured{padding:60px 0;background:#0b242d}
+.feature-meta{margin-bottom:20px;align-items:center}
+.feature-meta .eyebrow{margin:0}
+.feature-meta>span{font-size:13px}
+.featured h2{font-size:34px;line-height:1.3;margin:6px 0 12px;letter-spacing:-1.3px}
+.featured h2 br,.feature-lead br{display:none}
+.featured h2 br::after{content:' '}
+.feature-lead{font-size:20px;line-height:1.65;font-weight:650}
+.feature-description{font-size:15px;line-height:1.7;max-width:950px}
+.featured .tags{margin:12px 0}
+.featured .tags li{font-size:12px;padding:4px 9px;background:#e8f4f3;border-color:var(--line);color:var(--ink)}
+.featured .actions{margin:12px 0 20px;gap:22px}
+.text-link{font-size:13px;font-weight:650}
+.featured .scene-grid{grid-template-columns:1.5fr 1fr;gap:20px}
+.featured .photo{display:block;border-radius:12px}
+.featured .scene-grid img{height:440px;max-height:none;object-fit:cover}
+.featured .photo:first-child img{object-position:center 35%}
+.scene-caption{display:flex;justify-content:space-between;gap:12px;padding:14px 18px;font-size:13px;font-weight:600;background:white;color:var(--muted)}
+.feature-work{gap:24px;margin-top:32px}
+.feature-work>a{border-radius:10px;padding:22px;background:#f5faf9}
+.feature-work span{font-size:12px;font-weight:700}
+.feature-work h3{display:flex;justify-content:space-between;gap:12px;font-size:21px;margin:10px 0;color:var(--ink)}
+.feature-work p{font-size:14px;line-height:1.7}
+.featured .feature-work>a:hover{color:var(--ink)}
+.project-overview h3{font-size:36px;line-height:1.25;margin:13px 0 8px;letter-spacing:-1px}
+.project-name{font-size:18px;font-weight:600;margin-bottom:10px}
+.meta{font-size:10px;letter-spacing:.5px;gap:15px}
+.context h4{font-size:14px;color:var(--ink)}
+.context p{font-size:15px;line-height:1.85}
+.project-image{padding:20px;overflow:hidden}
+.project-image img{transition:transform .25s}
+.project-image:hover img{transform:scale(1.025)}
+.role{margin-top:16px;border-left-width:2px}
+.role>span{font-size:10px;letter-spacing:1px}
+.role p{font-size:14px;line-height:1.85}
+.project-row .tags{gap:7px}
+.project-row .tags li{font-size:12px;padding:3px 9px;border-radius:3px;border:0}
+.project-link{font-size:13px}
+.project-body>.case h3{font-size:16px;margin-bottom:14px;letter-spacing:0;line-height:1.5}
+.project-body>.case dt{font-size:13px;font-weight:750;color:var(--ink)}
+.project-body>.case dd,.project-body>.case>p{font-size:14px;line-height:1.8}
+.award{padding:8px 12px;border:1px solid var(--line);border-radius:6px;font-size:14px;font-weight:700;line-height:1.7;background:#edf7f1;color:var(--ink);margin:12px 0}
+.flow{padding:22px;background:#fff;border:1px solid var(--line);border-radius:0;margin-top:16px}
+.flow-heading{padding-bottom:19px;border-bottom:1px solid var(--line)}
+.flow-heading>span{display:block;font-size:9px;font-weight:700;letter-spacing:1.8px;margin-bottom:7px;color:var(--muted)}
+.flow-heading>strong{display:block;font-size:15px;font-weight:650;line-height:1.6}
+.flow ol{gap:24px}
+.flow li,.flow li.owned{display:grid;grid-template-columns:30px 1fr;gap:13px;padding:20px 0 0;background:transparent;border:0;border-radius:0;align-content:start}
+.flow .step-no{display:grid;place-items:center;width:28px;height:28px;border:1px solid var(--line);border-radius:50%;font-size:10px;font-weight:700;color:var(--muted);background:white;position:relative;z-index:1}
+.flow .owned .step-no{background:linear-gradient(110deg,#14b8a6,#164e63) no-repeat;border-color:transparent;background-origin:border-box;color:white}
+.flow .step-copy small{font-size:9px;color:var(--muted)}
+.flow .step-copy strong{display:block;font-size:17px;line-height:1.45;margin:2px 0 3px;letter-spacing:-.3px}
+.flow .step-copy>span{font-size:12px;line-height:1.7}
+.flow li:not(:last-child):after{right:-16px;top:35px;font-size:18px;transform:none}
+.flow figcaption{border-top:1px solid var(--line);padding-top:13px;margin-top:20px;font-size:10px;line-height:1.8}
+.row-flow{margin-top:25px}
+.footer{padding-block:35px;gap:25px}
+.footer p{font-size:11px;margin-top:12px}
+.footer>div:last-child{font-size:12px}
+.print-button{background-repeat:no-repeat;background-origin:border-box}
+.button.primary,.button.primary:hover,.featured .button.primary,.featured .button.primary:hover{background:linear-gradient(110deg,#14b8a6,#164e63) no-repeat;border-color:transparent;background-origin:border-box;color:white}
+.detail-hero{padding-block:40px 35px}
+.detail-hero h1{font-size:62px}
+.detail-hero h2{font-size:27px}
+.detail-hero .lead{font-size:17px;max-width:800px}
+.detail-award{display:block;margin:28px 0 20px}
+.section-nav{background:#fff;border-color:var(--line)}
+.section-nav>div{font-size:13px;font-weight:400;gap:30px}
+.detail-content{max-width:1160px}
+.section-title{display:flex;align-items:baseline;border-left:4px solid var(--ink);padding-left:19px;gap:15px;margin-bottom:32px}
+.section-title>span{font-size:13px;color:var(--muted)}
+.section-title h2{font-size:31px;margin:0}
+.detail-section>.case{border:1px solid var(--line);border-radius:5px;padding:30px 35px;margin-top:30px;background:white;overflow:hidden}
+.detail-section .case h3{font-size:25px;margin-bottom:22px}
+.trouble-steps>div{display:grid!important;grid-template-columns:35px 105px 1fr!important;gap:15px!important;padding:22px 0;border-bottom:1px solid var(--line);margin:0!important;align-items:start}
+.trouble-steps .step-index{font-size:12px;color:var(--muted);padding-top:3px}
+.trouble-steps dt{font-size:15px;margin:3px 0;color:var(--ink)}
+.trouble-steps dd{font-size:15px;line-height:1.9}
+.trouble-steps>div:last-child{background:#edf6f4;margin:0 -15px!important;padding-inline:15px;border:0}
+.lesson{display:grid;grid-template-columns:70px 1fr;gap:15px;background:#163e4c;color:white;padding:23px 35px;border-radius:5px}
+.lesson>span{font-size:12px;color:#d5e2e5}
+.lesson p,.lesson .reflection,.lesson h3{color:#f2f4f5;font-size:16px;line-height:1.8}
+.lesson h3{font-weight:650;margin-bottom:8px}
+.next-project{display:flex;justify-content:space-between;align-items:center;border-block:1px solid var(--line);padding:28px 0;margin-top:35px;font-size:18px;font-weight:650}
+.next-project>span:first-child{font-size:13px;font-weight:400;color:var(--muted)}
+}
+@media screen and (min-width:851px){
+.hero{padding-top:14px}.hero>.wrap{padding:14px 26px}.hero-layout{padding:10px 0}.hero-top{line-height:1.3}.profile-caption{line-height:1.45}
+.journey-section{padding:16px 0 20px}.journey-grid{display:block}.journey-intro{display:flex;align-items:baseline;gap:18px;margin-bottom:8px}.journey-intro .eyebrow,.journey-intro h2{margin:0}.journey-intro h2{font-size:28px}
+.timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border:0;padding:0}.timeline li{padding-left:13px}.timeline li:before{left:0;top:10px}.timeline h3{font-size:17px}.timeline p{font-size:13px}
+}
+@media screen and (max-width:1000px){.wrap{width:calc(100% - 56px)}.site-header{padding-inline:28px;gap:24px}}
+@media screen and (max-width:850px){
+.site-header{flex-wrap:wrap;height:auto;padding-block:12px;gap:12px}.site-header nav{order:3;width:100%;justify-content:space-between;margin:0;gap:10px;font-size:12px}.print-button{margin-left:auto}
+.hero-layout{grid-template-columns:minmax(0,1fr) 240px;gap:25px}.hero h1{font-size:32px}.profile-card{width:240px}.profile-card .portrait{height:230px}.hero-description{font-size:15px}.featured .scene-grid img{height:340px}.featured h2{font-size:29px}
+.section-nav{top:102px}
+}
+@media screen and (max-width:700px){
+.wrap{width:calc(100% - 40px)}.site-header{padding-inline:20px}.site-header nav{font-size:10px;gap:6px}.hero>.wrap{padding:20px}.hero-top{font-size:8px;letter-spacing:.8px}.hero-copy>.eyebrow{font-size:13px}
+.profile-card{display:block;border:0;box-shadow:none;background:transparent}.profile-caption h2 span{display:inline;margin-left:8px}.profile-caption{padding:9px 0}
+.block{padding-block:48px}.section-heading{margin-bottom:26px}.section-heading h2{font-size:27px}.section-heading>p{max-width:none;margin-top:15px;font-size:12px}
+.capabilities{grid-template-columns:1fr;gap:14px}.capabilities article{padding:24px}.capabilities h3{font-size:21px}.capabilities li{font-size:14px}
+.project-overview h3{font-size:30px}.context p{font-size:14px}.project-image{height:260px}.flow{padding:20px}.flow ol{grid-template-columns:1fr;gap:0}
+.flow li:not(:last-child):after{content:'';left:13px;right:auto;top:49px;bottom:-10px;border-left:1px solid var(--line);transform:none}
+.flow.role-map li:not(:last-child):after{content:none;border:0}
+.flow .step-copy strong{font-size:16px}.flow-heading>strong{font-size:15px}
+.qualifications{grid-template-columns:1fr;gap:16px}.footer{padding-block:28px;gap:22px}.footer>div{width:100%}
+.detail-hero h1{font-size:48px}.detail-hero h2{font-size:23px}.section-nav>div{gap:23px}
+.section-title{padding-left:13px;gap:10px}.section-title h2{font-size:26px}.detail-section>.case{padding:23px 19px}.detail-section .case h3{font-size:21px}
+.trouble-steps>div{grid-template-columns:25px 1fr!important;gap:9px!important;padding:19px 0}.trouble-steps dd{grid-column:2}.trouble-steps>div:last-child{margin:0 -8px!important;padding-inline:8px}
+.lesson{grid-template-columns:1fr;gap:7px;padding:20px}.lesson p{font-size:15px}
+}
+@media screen and (max-width:620px){
+.hero-layout{grid-template-columns:1fr;gap:20px}.profile-card{display:grid;grid-template-columns:120px 1fr;width:100%;max-width:none;column-gap:15px}.profile-card .portrait{height:155px;grid-row:auto}.profile-caption h2 span{display:block;margin-left:0}.hero h1{font-size:29px}.hero-description{font-size:14px}
+.journey-grid{grid-template-columns:1fr;gap:12px}.journey-intro .eyebrow{margin-bottom:5px}.journey-intro h2{font-size:25px}.timeline{gap:13px}.timeline h3{font-size:16px}
+}
+@media screen and (max-width:600px){
+.featured{padding:38px 0}.feature-meta{display:block}.feature-meta>span{display:block;margin-top:10px}.featured h2{font-size:27px}.featured h2 br{display:block}.feature-lead{font-size:20px}.featured .scene-grid{grid-template-columns:1fr;gap:16px}.featured .photo:first-child img{height:auto;aspect-ratio:7/5;object-fit:contain}.featured .photo:nth-child(2) img{height:210px}.scene-caption{padding:12px;font-size:12px}.feature-work{grid-template-columns:1fr}.feature-work h3{font-size:19px}
+}
+@media screen{
+.feature-work>a{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.feature-work-image{height:230px;background:#edf6f4;display:flex;align-items:center;justify-content:center}
+.feature-work-image img{width:100%;height:100%;object-fit:contain}
+.feature-work>a>span{margin:22px 22px 0}
+.feature-work>a>h3{margin:10px 22px}
+.feature-work>a>p{margin:0 22px 22px}
+}
+@media screen and (max-width:850px){.feature-work-image{height:180px}}
+@media screen and (max-width:600px){.feature-work-image{height:220px}}
+
+/* Keep every project navigation label visible on narrow screens. */
+@media screen and (max-width:700px){
+ .section-nav{top:100px}
+ .section-nav>div{flex-wrap:wrap;gap:0 16px;overflow:visible;white-space:normal;padding-block:4px}
+ .section-nav a{display:flex;align-items:center;min-height:40px;max-width:100%;white-space:nowrap}
+}
+
+/* Reference accent hierarchy: labels and timeline dates. */
+.eyebrow{color:var(--accent)}
+.timeline .date{color:var(--accent)}
+.featured .eyebrow{color:#a4e5dc}
+
+/* Neutral profile tags and white labels on the dark project surface. */
+.hero .tags li{background:#f3f4f6;border-color:#e5e7eb;color:#4b5563}
+.featured .tags li{background:#fff;border-color:#d6dee8;color:#334155}
+
+.featured .scene-caption{color:#58677a;font-size:13px;font-weight:600;padding:14px 18px}
+.featured .scene-caption>span{font-weight:700}
+
+/* Implementation cards: white surface, neutral media area, accent labels. */
+.featured .feature-work>a,.featured .feature-work>a:first-child{background:#fff}
+.featured .feature-work-image{background:#edf2f3}
+.featured .feature-work>a>span{color:var(--accent)}
+.featured .feature-work h3>span{font-size:inherit;color:inherit}
+
+/* Restore the reference accent hierarchy in the project list. */
+#completed-projects .section-heading sup,#completed-projects .context h4,#completed-projects .role>span,#completed-projects .project-link{color:var(--accent)}
+#completed-projects .case-label{font-size:13px;color:var(--accent);margin:0 0 14px;font-weight:700}
+
+#poco .flow .owned .step-copy>small{color:var(--accent)}
+
+#kickcan .flow .owned .step-copy>small{color:var(--accent)}
+
+#plc .flow .owned .step-copy>small{color:var(--accent)}
+
+.manyfarm-detail .detail-hero h2{font-weight:400}
+
+.manyfarm-detail .full-process-video{margin:30px 0;scroll-margin-top:155px}.manyfarm-detail .full-process-video iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:#111827}.manyfarm-detail .full-process-video figcaption{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.manyfarm-detail .full-process-video figcaption a{color:inherit}
+
+/* ManyFarm overview: project facts, stack, context and system roles. */
+.mf-project-facts{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;margin:30px 0 42px}
+.mf-project-facts>div{display:grid;grid-template-columns:94px 1fr;gap:0;padding:16px 0;border-bottom:1px solid #e5e7eb;font-size:14px;line-height:1.8}
+.mf-project-facts dt{font-weight:700;color:#374151}.mf-project-facts dd{margin:0;color:#626970}
+.mf-tech-stack{padding:24px;background:#edf3f2;border-radius:4px;margin-bottom:40px}.mf-tech-stack h3{font-size:13px;margin:0 0 14px}.mf-tech-stack .tags{margin:0}.mf-tech-stack .tags li{background:#fff;border-color:#e0e5e5;color:#4b5563}
+.mf-overview-context{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:24px}.mf-overview-context h3{font-size:21px;margin:0 0 16px}.mf-overview-context p{margin:0;line-height:1.9}
+.mf-system-map{padding:30px;background:#edf3f2;border-radius:4px}.mf-control{text-align:center;padding:18px 0 24px;border-bottom:1px solid #d5dddb;margin-bottom:18px;font-size:14px}.mf-control span{display:inline-block;margin-left:12px;color:#626970;font-size:12px}
+.mf-processes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.mf-processes article{background:#fff;border:1px solid #d8dcde;padding:20px 18px}.mf-processes h4{font-size:17px;margin:0 0 20px}.mf-processes p{font-size:13px;line-height:1.9;margin:0}.mf-processes .mf-role{font-size:12px;color:#626970;margin-bottom:8px}.mf-own-scope{border-left:3px solid #087f85;padding-left:12px}.mf-own-scope .mf-role{color:#087f85;font-weight:700}.mf-team-scope{border-top:1px solid #e5e7eb;margin-top:14px;padding-top:12px}
+@media(max-width:800px){.mf-project-facts,.mf-overview-context{grid-template-columns:1fr}.mf-processes{grid-template-columns:1fr 1fr}.mf-control span{display:block;margin:8px 0 0}}
+@media(max-width:480px){.mf-processes{grid-template-columns:1fr}.mf-system-map{padding:20px}.mf-project-facts>div{grid-template-columns:88px 1fr}}
+
+.mf-processes .mf-harvest{border:2px solid #4b5563}.mf-own-scope{border-left:0;padding-left:0}.mf-own-scope .mf-role{color:#626970;font-weight:400}
+
+.mf-implementation-intro{margin:0 0 30px;line-height:1.9}.mf-implementation-summary{padding:17px 20px;background:#edf3f2;border-left:3px solid #087f85;font-size:14px;line-height:1.8;margin:24px 0 30px}.mf-navigation-block{margin:44px 0;scroll-margin-top:160px}.mf-navigation-block>h3{font-size:24px;margin:0 0 18px}.mf-navigation-content{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:start}.mf-navigation-content .video-feature{margin:0;width:100%}.mf-navigation-details .implementation:first-child{padding-top:0;margin-top:0}.mf-navigation-details .implementation h3{font-size:20px}.mf-navigation-details .implementation p{line-height:1.9}
+@media(max-width:800px){.mf-navigation-content{grid-template-columns:1fr}.mf-navigation-block>h3{font-size:22px}}
+
+.mf-motion-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:40px 0}.mf-motion-card{border:1px solid #e0e5e5;border-radius:6px;padding:20px;min-width:0}.mf-motion-card h3{font-size:19px;line-height:1.5;margin:0 0 18px;min-height:57px}.mf-motion-card figure{margin:0 0 20px}.mf-motion-card figure a{display:block;background:#fff}.mf-motion-card img{display:block;width:100%;height:auto;aspect-ratio:1.25;object-fit:contain}.mf-motion-card figcaption{font-size:11px;color:#626970;padding:10px 0 0}.mf-motion-card p{font-size:14px;line-height:1.9;margin:0}.mf-motion-card .mf-motion-note{font-size:12px;color:#626970;border-top:1px solid #e5e7eb;padding-top:12px;margin-top:14px}
+@media(max-width:900px){.mf-motion-cards{grid-template-columns:1fr}.mf-motion-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 24px}.mf-motion-card h3{grid-column:1/-1;min-height:0}.mf-motion-card figure{grid-column:1;grid-row:2/4}.mf-motion-card .mf-motion-note{grid-column:2}}
+@media(max-width:560px){.mf-motion-card{display:block}.mf-motion-card h3{min-height:0}.mf-motion-card img{max-height:300px}}
+
+.mf-test-metrics p{font-size:12px;line-height:1.8;color:#626970;margin:10px 0 0}.mf-test-metrics span{line-height:1.7}
+
+.mf-issue-nav{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 30px}.mf-issue-nav a{border:1px solid #e0e3e6;border-radius:6px;padding:12px 15px;font-size:14px;color:#4b5563}.mf-issue-nav a:hover{background:#edf3f2}.mf-issue-card{border:1px solid #e0e3e6;border-radius:12px;padding:30px;margin:0 0 30px;scroll-margin-top:160px}.mf-issue-card>header{display:flex;gap:18px;align-items:center;padding-bottom:24px;border-bottom:1px solid #e5e7eb}.mf-issue-number{display:grid;place-items:center;flex-shrink:0;width:48px;height:48px;border-radius:9px;background:#164e63;color:white;font-size:24px;font-weight:700}.mf-issue-tech{font-size:12px;letter-spacing:.1em;color:#626970;margin:0 0 10px}.mf-issue-card h3{font-size:24px;line-height:1.5;margin:0}.mf-issue-step{margin-top:25px}.mf-issue-step h4{font-size:17px;margin:0 0 10px}.mf-issue-step h4 span{font-size:13px;color:#626970;margin-right:12px}.mf-issue-step p{margin:0;line-height:1.9;max-width:none}.mf-issue-step strong{color:#252a30;font-weight:700}
+@media(max-width:600px){.mf-issue-card{padding:20px}.mf-issue-card h3{font-size:20px}.mf-issue-card>header{gap:12px}.mf-issue-number{width:40px;height:40px;font-size:20px}.mf-issue-nav{gap:8px}.mf-issue-nav a{padding:10px;font-size:12px}}
+
+.mf-issue-visual{margin:24px auto 28px;max-width:960px}.mf-issue-visual a{display:block}.mf-issue-visual img{display:block;width:100%;height:auto}.mf-issue-visual figcaption{font-size:12px;color:#626970;margin-top:10px}
+
+/* ManyFarm reflection: three cards, aligned with reference layout. */
+.manyfarm-detail .mf-reflection{background:#edf3f2;border:0;border-radius:4px;padding:34px;margin-top:70px}
+.mf-reflection .section-title{margin-bottom:32px}
+.mf-reflection-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.mf-reflection-cards article{background:#f8fafb;border-top:3px solid #47777b;border-radius:6px;padding:24px;min-width:0}
+.mf-reflection-cards .mf-reflection-label{font-size:12px;font-weight:600;color:#526d70;margin:8px 0 22px}
+.mf-reflection-cards h3{font-size:20px;line-height:1.6;margin:0 0 16px;color:#252a30}
+.mf-reflection-cards p{font-size:14px;line-height:2;margin:0;color:#626970}
+.mf-reflection-cards strong{font-weight:700;color:#303a40}
+@media(max-width:800px){.mf-reflection-cards{grid-template-columns:1fr}.manyfarm-detail .mf-reflection{padding:22px}.mf-reflection-cards article{padding:22px}}
+
+.poco-overview-photo{display:flex;justify-content:center;align-items:center;gap:0;margin:30px 0;background:#f0f1ef;padding:28px;border-radius:4px}.poco-overview-photo img{width:36%;height:360px;object-fit:contain;background:white}
+.poco-facts{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;margin:30px 0 44px}.poco-facts>div{display:grid;grid-template-columns:100px 1fr;border-bottom:1px solid #e0e3e6;padding:17px 0;font-size:14px;line-height:1.8}.poco-facts dt{font-weight:700}.poco-facts dd{margin:0;color:#626970}
+.poco-stack-title{font-size:20px;margin:0 0 22px}.poco-stack-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:36px}.poco-stack-grid article{background:#f7f9fc;border:1px solid #e0e3e6;border-radius:7px;padding:18px}.poco-stack-grid h4{font-size:14px;margin:0 0 14px}.poco-stack-grid ul{list-style:none;display:flex;flex-wrap:wrap;gap:7px;padding:0;margin:0}.poco-stack-grid li{font-size:12px;color:#626970;border:1px solid #e0e3e6;padding:5px 8px;background:white}
+.poco-context{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin:32px 0 40px}.poco-context h3{font-size:21px;margin:0 0 16px}.poco-context p{margin:0;line-height:1.9}
+.poco-user-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;list-style:none;padding:24px;background:#edf3f2;border-radius:4px;margin:0}.poco-user-flow li{border-top:2px solid #444;padding-top:18px}.poco-user-flow li>span{font-size:12px;color:#626970}.poco-user-flow h4{font-size:17px;margin:18px 0 10px}.poco-user-flow p{font-size:13px;line-height:1.9;margin:0}
+@media(max-width:800px){.poco-facts,.poco-stack-grid,.poco-context{grid-template-columns:1fr}.poco-overview-photo{padding:16px}.poco-overview-photo img{width:50%;height:240px}.poco-user-flow{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.poco-user-flow{grid-template-columns:1fr}.poco-overview-photo img{height:165px}.poco-facts>div{grid-template-columns:85px 1fr}}
+
+.poco-demo-block{margin:28px 0 42px}.poco-demo-block>h3{font-size:24px;margin:0 0 24px}.poco-demo-block .video-grid{scroll-margin-top:160px}.poco-full-demo{margin:20px 0 0}.poco-full-demo a{display:inline-block;border-bottom:1px solid #4b5563;padding:6px 0;font-size:14px;font-weight:600}
+.poco-implementation-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:start;border-top:1px solid #e0e3e6;padding-top:32px;margin:36px 0}.poco-implementation-pair .flow{margin:0}.poco-implementation-pair .flow ol{display:grid;grid-template-columns:1fr;gap:18px}.poco-implementation-pair .flow li:after{display:none}.poco-implementation-pair .implementation{margin:0;padding:0 0 24px}.poco-implementation-pair .implementation h3{font-size:21px;line-height:1.6;margin:0 0 16px}.poco-implementation-pair .implementation p{margin:0;line-height:1.9}.poco-settings-photo{margin:0;background:#f7f9fc;border:1px solid #e0e3e6;padding:18px}.poco-settings-photo img{display:block;width:100%;height:auto}.poco-settings-photo figcaption{font-size:12px;color:#626970;line-height:1.8;margin-top:12px}
+@media(max-width:800px){.poco-implementation-pair{grid-template-columns:1fr}.poco-demo-block .video-grid{grid-template-columns:1fr}}
+
+.poco-result-award{padding:18px 20px;border:1px solid #ccdedb;border-radius:7px;background:#edf7f4;margin:24px 0}.poco-result-award strong{display:block;color:#26585c;font-size:16px}.poco-result-award>span{display:block;font-size:13px;color:#626970;margin-top:8px}.poco-results-intro{margin:24px 0;font-size:16px}
+.poco-result-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#163e4a;border-radius:4px;overflow:hidden;margin:30px 0 16px}.poco-result-cards article{padding:32px 24px;border-right:1px solid #ffffff26}.poco-result-cards article:last-child{border-right:0}.poco-result-cards h3{font-size:14px;font-weight:400;color:#dae7e9;margin:0 0 24px}.poco-result-cards strong{display:block;color:#fff;font-size:36px;line-height:1.3;letter-spacing:-.03em}.poco-result-cards strong span{font-size:24px;margin-left:4px}.poco-result-condition{font-size:13px;color:#626970;line-height:1.8;margin:16px 0 26px}
+@media(max-width:600px){.poco-result-cards{grid-template-columns:1fr}.poco-result-cards article{border-right:0;border-bottom:1px solid #ffffff26;padding:26px 22px}.poco-result-cards article:last-child{border-bottom:0}.poco-result-cards h3{margin-bottom:14px}}
+
+.poco-trouble-case>header{border-bottom:1px solid #e0e3e6;padding-bottom:22px;margin-bottom:8px}.poco-trouble-tech{font-size:11px;font-weight:600;letter-spacing:.1em;color:#626970;margin:0 0 16px}.poco-trouble-case>header h3{margin:0;line-height:1.6}.poco-trouble-case .trouble-steps strong{color:#303a40;font-weight:700}
+
+.detail-section.poco-reflection{background:#edf3f2;border:0;border-radius:4px;padding:34px;margin-top:70px}.poco-reflection .section-title{margin-bottom:32px}.poco-reflection-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:36px;align-items:center;border-top:1px solid #d2dad9;border-bottom:1px solid #d2dad9;padding:30px 0}.poco-reflection-row h3{font-size:23px;line-height:1.6;margin:0;color:#252a30}.poco-reflection-row p{font-size:15px;line-height:2;margin:0;color:#626970}
+@media(max-width:800px){.detail-section.poco-reflection{padding:22px}.poco-reflection-row{grid-template-columns:1fr;gap:16px;padding:24px 0}.poco-reflection-row h3{font-size:21px}}
+
+.kick-tech-stack{background:#edf3f2;padding:22px 24px;border-radius:4px;margin:30px 0}.kick-tech-stack h3{font-size:12px;letter-spacing:.12em;margin:0 0 16px;color:#526d70}.kick-tech-stack .tags{margin:0}.kick-tech-stack .tags li{background:white;border:1px solid #dce1e3;color:#626970}.kick-network{margin:28px 0 0;background:#f7f9fc;padding:26px;border-radius:4px}.kick-network a,.kick-network img{display:block;width:100%;height:auto}.kick-network figcaption{font-size:12px;line-height:1.8;color:#626970;margin-top:16px}@media(max-width:600px){.kick-network{padding:12px}.kick-tech-stack{padding:18px}}
+
+/* KickCAN troubleshooting: reference-style steps and lesson footer. */
+.kick-trouble-case .trouble-steps ol{margin:0;padding-left:20px}.kick-trouble-case .trouble-steps li+li{margin-top:6px}.kick-trouble-case>.lesson{margin:26px -35px -30px;border-radius:0}.detail-section .kick-trouble-case .lesson h3{font-size:16px;margin:0 0 8px;color:#f2f4f5}.kick-trouble-case .lesson p{margin:0;font-size:15px}
+@media(max-width:800px){.kick-trouble-case>.lesson{margin:24px -19px -23px}}
+
+.kick-reference-links{margin-top:20px;border-top:1px solid #d2dad9;border-bottom:1px solid #d2dad9;padding:18px 0}.kick-reference-links summary{cursor:pointer;font-size:15px;font-weight:600}.kick-reference-links>div{display:flex;flex-wrap:wrap;gap:14px 24px;padding:20px 0 4px}.kick-reference-links a{font-size:14px;text-decoration:underline;text-underline-offset:4px}
+
+/* PLC implementation: related figure followed by heading and explanation. */
+.plc-implementation-block{border-top:1px solid #e0e3e6;margin-top:40px;padding-top:36px}.plc-implementation-block>.photo{margin:0 0 28px}.plc-implementation-block>.photo img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain}.plc-implementation-copy{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:36px;align-items:start}.plc-implementation-copy h3{font-size:24px;line-height:1.6;margin:0}.plc-implementation-copy p{font-size:15px;line-height:1.9}.plc-implementation-copy .poco-trouble-tech{font-size:11px;margin-bottom:16px}
+@media(max-width:800px){.plc-implementation-copy{grid-template-columns:1fr;gap:18px}.plc-implementation-copy h3{font-size:21px}}
+
+/* Detail hero labels and subtitles match reference hierarchy. */
+.portfolio-detail .detail-hero>.eyebrow{color:var(--ink)}
+.portfolio-detail .detail-hero>h2{font-weight:400}
+
+/* Detail hero actions: reference button shape and typography. */
+.portfolio-detail .detail-hero .actions .button{border-radius:0;padding:10px 20px;font-weight:400}
+
+/* Mobile detail actions: full-width GitHub followed by equal-width section links. */
+@media(max-width:600px){.portfolio-detail .detail-hero .mobile-action-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.portfolio-detail .detail-hero .mobile-action-grid .button{width:100%;min-width:0;justify-content:center}.portfolio-detail .detail-hero .mobile-action-grid .button.primary{grid-column:1 / -1}}
+
+.portfolio-home #main-project .feature-description{margin-top:0}
+
+.portfolio-home #main-project .actions .button{font-weight:400;gap:0.25em}
+.portfolio-home #main-project .actions .text-link{text-decoration:none}
+
+.portfolio-home #about .actions .button{font-weight:400}
+.portfolio-home #about .actions .button:not(.primary){gap:0.25em}
+
+.portfolio-detail .detail-hero .poco-hero-award{font-size:16px;padding:14px 18px}
+
+/* PLC hero heading: reference line height and spacing. */
+.portfolio-detail.plc-detail .detail-hero>h1{line-height:1.13;margin:0 0 9px}
+
+/* PLC hero typography and two-action layout. */
+.portfolio-detail.plc-detail .detail-hero>.eyebrow{font-size:13px;line-height:1.5;margin-bottom:13px}
+.portfolio-detail.plc-detail .detail-hero>h2{font-size:26px;line-height:1.8;margin-bottom:26px}
+@media(max-width:600px){.portfolio-detail.plc-detail .plc-hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.portfolio-detail.plc-detail .plc-hero-actions .button{width:100%;min-width:0;justify-content:center}}
+
+/* PLC overview technology tags match reference dimensions. */
+.portfolio-detail.plc-detail #overview .kick-tech-stack .tags li{font-size:12px;padding:2px 8px;border-radius:0}
+
+/* PLC overview flow: reference-style panel and vertical steps. */
+.plc-detail #overview .role-map{background:#edf3f2;border:0;border-radius:4px;padding:22px}
+.plc-detail #overview .role-map .flow-heading{border:0;padding-bottom:22px}
+.plc-detail #overview .role-map ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:0;padding:0;list-style:none}
+.plc-detail #overview .role-map li{display:block;border-top:2px solid #444;padding:18px 0 0}
+.plc-detail #overview .role-map .step-no{display:block;width:auto;height:auto;background:none;border:0;border-radius:0;color:#626970;font-size:12px;font-weight:400;margin-bottom:18px}
+.plc-detail #overview .role-map .step-copy strong{margin:8px 0 12px;font-size:16px;line-height:1.6}
+.plc-detail #overview .role-map .step-copy>span{font-size:14px;line-height:1.8}
+@media(max-width:600px){.plc-detail #overview .role-map ol{grid-template-columns:1fr}}
+
+/* PLC demonstration and HMI implementation: reference frames and table. */
+.plc-detail .plc-demo-frame,.plc-detail .plc-hmi-block>.photo{padding:18px;background:#edf3f2;border:0;border-radius:5px;overflow:hidden}
+.plc-detail .plc-demo-frame img{max-height:520px;background:transparent}
+.plc-detail .plc-demo-frame figcaption,.plc-detail .plc-hmi-block>.photo figcaption{background:transparent;border:0;padding:0;margin:12px 0 0;font-size:12px;line-height:1.8}
+.plc-detail .plc-hmi-block>.photo{padding:24px 28px;background:#f8f9f9}
+.plc-detail .plc-hmi-block .plc-implementation-copy{grid-template-columns:minmax(0,1fr) minmax(0,1.7fr)}
+.plc-detail .plc-hmi-block .plc-implementation-copy header>p:last-child{margin:20px 0 0}
+.plc-detail .plc-hmi-table{width:100%;border-collapse:collapse;margin:0;font-size:14px;line-height:1.8}
+.plc-detail .plc-hmi-table th,.plc-detail .plc-hmi-table td{text-align:left;padding:16px 18px;border-bottom:1px solid #dce1e3;vertical-align:top}
+.plc-detail .plc-hmi-table thead{background:#f3f3f3}
+.plc-detail .plc-hmi-table tbody th{font-weight:400;white-space:nowrap;color:#626970}
+.plc-detail .plc-hmi-table td{color:#626970}
+@media(max-width:800px){.plc-detail .plc-hmi-block .plc-implementation-copy{grid-template-columns:1fr}.plc-detail .plc-hmi-block>.photo{padding:16px}.plc-detail .plc-hmi-table th,.plc-detail .plc-hmi-table td{padding:12px}}
+
+.plc-detail .plc-hmi-table thead th{background:#f3f3f3;color:var(--ink)}
+.plc-detail .plc-hmi-table tbody th{background:transparent}
+
+/* PLC time measurement: shared image frame and summary layout. */
+.plc-detail .plc-time-block>.photo{padding:24px 28px;background:#f8f9f9;border:0;border-radius:5px;overflow:hidden}
+.plc-detail .plc-time-block>.photo figcaption{background:transparent;border:0;padding:0;margin:12px 0 0;font-size:12px;line-height:1.8}
+.plc-detail .plc-time-block .plc-implementation-copy{grid-template-columns:minmax(0,1fr) minmax(0,1.7fr)}
+.plc-detail .plc-time-block .plc-implementation-copy header>p:last-child{margin:20px 0 0}
+@media(max-width:800px){.plc-detail .plc-time-block>.photo{padding:16px}.plc-detail .plc-time-block .plc-implementation-copy{grid-template-columns:1fr}}
+
+/* PLC results: neutral reference header and balanced columns. */
+.plc-detail #results table th,.plc-detail #results table td{padding:15px 17px}
+.plc-detail #results table thead th{background:#f3f3f3;font-weight:700;color:var(--ink)}
+.plc-detail #results table th:first-child,.plc-detail #results table td:first-child{width:23.33%}
+@media(max-width:600px){.plc-detail #results table th:first-child,.plc-detail #results table td:first-child{width:32%}}
+
+/* PLC troubleshooting: reference title spacing and card corners. */
+.plc-detail #troubleshooting .case{border-radius:6px}
+.plc-detail #troubleshooting .case>header>h3{margin-bottom:0}
+
+/* PLC closing navigation: reference typography and divider. */
+.plc-detail .next-project{font-size:20px;font-weight:700;padding:40px 0;border-top:1px solid #222;border-bottom:0}
+.plc-detail .next-project>span:first-child,.plc-detail .next-project>span:last-child{font-size:20px;font-weight:700;color:var(--ink)}
+
+/* PLC footer: compact reference-style identity and links. */
+.plc-detail .plc-footer{display:flex;align-items:center;justify-content:flex-start;gap:24px;padding:33px 0;font-size:12px}
+.plc-detail .plc-footer-name{font-size:12px;font-weight:700;color:var(--ink);white-space:nowrap}
+.plc-detail .plc-footer>p{font-size:12px;margin:0;color:var(--muted)}
+.plc-detail .plc-footer>nav{display:flex;align-items:center;gap:24px;margin-left:auto;font-size:12px}
+@media(max-width:600px){.plc-detail .plc-footer{flex-wrap:wrap;gap:12px 18px}.plc-detail .plc-footer>nav{width:100%;margin-left:0;flex-wrap:wrap;gap:18px}}
+
+/* PLC sticky navigation: neutral active state and content-width rules. */
+.plc-detail .section-nav{border:0}
+.plc-detail .section-nav>.wrap{border-block:1px solid var(--line);font-size:14px}
+.plc-detail .section-nav a{color:#666;font-weight:400}
+.plc-detail .section-nav a:hover,.plc-detail .section-nav a[aria-current="location"]{color:#111}
+.plc-detail .section-nav a[aria-current="location"]{font-weight:700}
+
+/* PLC mobile section navigation: compact single row with overflow fallback. */
+@media(max-width:600px){.plc-detail .section-nav>.wrap{font-size:13px;gap:12px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}.plc-detail .section-nav a{flex:0 0 auto;max-width:none}}
+
+/* POCO closing navigation: reference typography and divider. */
+.poco-detail .next-project{font-size:20px;font-weight:700;padding:40px 0;border-top:1px solid #222;border-bottom:0}
+.poco-detail .next-project>span:first-child,.poco-detail .next-project>span:last-child{font-size:20px;font-weight:700;color:var(--ink)}
+
+/* POCO footer: compact reference-style identity and links. */
+.poco-detail .poco-footer{display:flex;align-items:center;justify-content:flex-start;gap:24px;padding:33px 0;font-size:12px}
+.poco-detail .poco-footer-name{font-size:12px;font-weight:700;color:var(--ink);white-space:nowrap}
+.poco-detail .poco-footer>p{font-size:12px;margin:0;color:var(--muted)}
+.poco-detail .poco-footer>nav{display:flex;align-items:center;gap:24px;margin-left:auto;font-size:12px}
+@media(max-width:600px){.poco-detail .poco-footer{flex-wrap:wrap;gap:12px 18px}.poco-detail .poco-footer>nav{width:100%;margin-left:0;flex-wrap:wrap;gap:18px}}
+
+
+/* POCO sticky navigation: neutral active state and content-width rules. */
+.poco-detail .section-nav{border:0}
+.poco-detail .section-nav>.wrap{border-block:1px solid var(--line);font-size:14px}
+.poco-detail .section-nav a{color:#666;font-weight:400}
+.poco-detail .section-nav a:hover,.poco-detail .section-nav a[aria-current="location"]{color:#111}
+.poco-detail .section-nav a[aria-current="location"]{font-weight:700}
+
+/* POCO mobile section navigation: compact single row with overflow fallback. */
+@media(max-width:600px){.poco-detail .section-nav>.wrap{font-size:13px;gap:12px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}.poco-detail .section-nav a{flex:0 0 auto;max-width:none}}
+
+
+/* POCO hero: reference spacing, achievement frame and two actions. */
+.poco-detail .detail-hero>.breadcrumb{font-size:13px;line-height:1.8;margin:0 0 37px;color:var(--muted)}
+.poco-detail .detail-hero>.breadcrumb a{color:inherit;text-decoration:none}
+.poco-detail .detail-hero>.eyebrow{font-size:13px;line-height:1.5;margin:0 0 13px}
+.poco-detail .detail-hero>h1{line-height:1.13;margin:0 0 9px}
+.poco-detail .detail-hero>h2{font-size:26px;line-height:1.8;margin:0 0 26px}
+.poco-detail .detail-hero>.poco-hero-award{margin:16px 0;border:1px solid #bcd5d3;border-radius:8px}
+.poco-detail .detail-hero>.lead{line-height:1.8;margin:0 0 17px}
+@media(max-width:600px){.poco-detail .poco-hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.poco-detail .poco-hero-actions .button{width:100%;min-width:0;justify-content:center}}
+
+/* POCO overview: shared front/side photo in a reference-sized frame. */
+.poco-detail .poco-overview-photo{background:#eeeeec;border:0;border-radius:6px;padding:28px;margin:30px 0}
+.poco-detail .poco-overview-photo img{display:block;width:100%;max-width:760px;height:auto;max-height:none;object-fit:contain}
+@media(max-width:800px){.poco-detail .poco-overview-photo{padding:20px}}
+
+/* POCO technology cards: reference heading and compact tag spacing. */
+.poco-detail .poco-stack-grid h4{font-size:15px;line-height:1.3;margin:0 0 12px}
+.poco-detail .poco-stack-grid li{padding:2px 8px;line-height:1.8}
+
+/* POCO user flow: reference spacing with the established teal background. */
+.poco-detail .poco-user-flow{padding:22px;gap:25px}
+.poco-detail .poco-user-flow h4{margin:12px 0 8px}
+.poco-detail .poco-user-flow p{font-size:14px}
+
+/* POCO demo: selectable existing clips in a shared viewing frame. */
+.poco-detail .poco-demo-block{scroll-margin-top:160px}
+.poco-detail .poco-demo-controls{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.poco-detail .poco-demo-controls button{font:inherit;font-size:14px;font-weight:400;line-height:1.8;padding:10px 20px;background:#fff;border:1px solid #d9dce0;border-radius:2px;color:#333;cursor:pointer}
+.poco-detail .poco-demo-controls button[aria-pressed="true"]{background:#222;border-color:#222;color:#fff}
+.poco-detail .poco-demo-controls button:focus-visible{outline:2px solid #087f85;outline-offset:3px}
+.poco-detail .poco-demo-scene{margin:0;padding:18px;background:#edf3f2;border:0;border-radius:5px}
+.poco-detail .poco-demo-scene[hidden]{display:none}
+.poco-detail .poco-demo-scene img{display:block;width:100%;height:520px;object-fit:contain;background:#111}
+.poco-detail .poco-demo-scene figcaption{font-size:12px;line-height:1.8;padding:0;margin:12px 0 0;border:0;background:transparent;color:var(--muted)}
+@media(max-width:600px){.poco-detail .poco-demo-scene{padding:12px}.poco-detail .poco-demo-scene img{height:auto;max-height:420px}.poco-detail .poco-demo-controls button{flex:1;padding:10px 12px}}
+
+/* POCO command implementation: horizontal flow above title and details. */
+.poco-detail .poco-command-implementation{border-top:1px solid #e0e3e6;padding-top:36px;margin:36px 0}
+.poco-detail .poco-command-implementation>.flow{margin:0 0 28px;padding:22px;background:#edf3f2;border:0;border-radius:4px}
+.poco-detail .poco-command-implementation .flow-heading{border:0;padding-bottom:22px}
+.poco-detail .poco-command-implementation .flow ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;margin:0;padding:0;list-style:none}
+.poco-detail .poco-command-implementation .flow li{display:block;border-top:2px solid #444;padding:18px 0 0}
+.poco-detail .poco-command-implementation .flow li:after{display:none}
+.poco-detail .poco-command-implementation .step-no{display:block;width:auto;height:auto;background:none;border:0;border-radius:0;color:#626970;font-size:12px;font-weight:400;margin-bottom:18px}
+.poco-detail .poco-command-implementation .step-copy strong{font-size:17px;line-height:1.6;margin:8px 0}
+.poco-detail .poco-command-implementation .step-copy>span{font-size:14px;line-height:1.8}
+.poco-detail .poco-command-copy{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);gap:36px;align-items:start}
+.poco-detail .poco-command-copy header>p{margin:0 0 16px}
+.poco-detail .poco-command-copy h3{font-size:24px;line-height:1.6;margin:0}
+.poco-detail .poco-command-copy .implementation{border:0;margin:0 0 24px;padding:0}
+.poco-detail .poco-command-copy .implementation:last-child{margin-bottom:0}
+.poco-detail .poco-command-copy h4{font-size:16px;line-height:1.6;margin:0 0 12px}
+.poco-detail .poco-command-copy .implementation p{font-size:15px;line-height:1.9;margin:0}
+@media(max-width:800px){.poco-detail .poco-command-copy{grid-template-columns:1fr;gap:20px}.poco-detail .poco-command-copy h3{font-size:21px}}
+@media(max-width:600px){.poco-detail .poco-command-implementation .flow ol{grid-template-columns:1fr}}
+
+
+
+/* POCO: full-width system flow, then separate initial and upgraded implementation. */
+.poco-detail .poco-command-implementation>.flow{margin-bottom:32px}
+.poco-detail .poco-command-implementation .flow-heading{padding-bottom:16px}
+.poco-detail .poco-command-implementation .step-no{margin-bottom:8px}
+.poco-detail .poco-development-block{margin:0;padding:0}
+.poco-detail .poco-development-block+.poco-development-block{border-top:1px solid #e0e3e6;margin-top:32px;padding-top:32px}
+.poco-detail .poco-hardware-visual{margin:0 0 28px;padding:20px;background:#f7f9fc;border:1px solid #e0e3e6;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.poco-detail .poco-hardware-visual img{display:block;width:auto;max-width:100%;height:280px;object-fit:contain}
+.poco-detail .poco-hardware-visual figcaption{margin:12px 0 0;padding:0;border:0;background:transparent;font-size:12px;line-height:1.8;color:var(--muted);text-align:center}
+.poco-detail .poco-development-body p{margin:0;font-size:15px;line-height:1.9}
+@media(max-width:600px){.poco-detail .poco-hardware-visual img{height:auto;width:220px;max-width:100%}}
+
+/* POCO settings: screen above the implementation title and body. */
+.poco-detail .poco-settings-implementation{border-top:1px solid #e0e3e6;padding-top:32px;margin:36px 0 0}
+.poco-detail .poco-settings-implementation>.poco-settings-photo{margin:0 0 28px;padding:24px;background:#f7f9fc;border:1px solid #e0e3e6;border-radius:4px}
+.poco-detail .poco-settings-implementation>.poco-settings-photo img{width:100%;max-width:760px;height:auto;margin:0 auto}
+.poco-detail .poco-settings-implementation>.poco-settings-photo figcaption{margin:12px 0 0;padding:0;border:0;background:transparent;font-size:12px;line-height:1.8;text-align:center}
+@media(max-width:600px){.poco-detail .poco-settings-implementation>.poco-settings-photo{padding:16px}}
+
+/* POCO results: reference dimensions, retaining the established result palette. */
+.poco-detail .poco-result-award{padding:14px 18px;border-radius:8px}
+.poco-detail .poco-result-award>span{margin-top:4px}
+.poco-detail .poco-result-cards article{padding:30px 24px}
+.poco-detail .poco-result-cards strong{font-size:35px}
+@media(max-width:600px){.poco-detail .poco-result-cards article{padding:26px 22px}}
+
+/* POCO servo case: reference title spacing and card corners. */
+.poco-detail .poco-servo-case{border-radius:6px}
+.poco-detail .poco-servo-case>header h3{margin:0;line-height:1.5}
+
+/* POCO frame case: reference title spacing and card corners. */
+.poco-detail .poco-frame-case{border-radius:6px}
+.poco-detail .poco-frame-case>header h3{margin:0;line-height:1.5}
+
+/* POCO reflection: reference typography and spacing, retaining the teal palette. */
+.poco-detail .poco-reflection{padding:35px}
+.poco-detail .poco-reflection-row{grid-template-columns:minmax(0,1.1fr) minmax(0,1.9fr);gap:50px}
+.poco-detail .poco-reflection-row h3{font-size:24px}
+.poco-detail .poco-reflection-row p{font-size:16px;line-height:2}
+@media(max-width:800px){.poco-detail .poco-reflection{padding:22px}.poco-detail .poco-reflection-row{grid-template-columns:1fr;gap:16px}.poco-detail .poco-reflection-row h3{font-size:21px}}
+
+/* KickCAN hero: reference typography, two actions and content-width navigation. */
+.kickcan-detail .detail-hero>.breadcrumb{font-size:13px;line-height:1.8;margin:0 0 37px;color:var(--muted)}
+.kickcan-detail .detail-hero>.breadcrumb a{color:inherit;text-decoration:none}
+.kickcan-detail .detail-hero>.eyebrow{font-size:13px;line-height:1.5;margin:0 0 13px}
+.kickcan-detail .detail-hero>h1{line-height:1.13;margin:0 0 9px}
+.kickcan-detail .detail-hero>h2{font-size:26px;line-height:1.8;margin:0 0 26px}
+.kickcan-detail .detail-hero>.lead{line-height:1.8;margin:0 0 17px}
+.kickcan-detail .section-nav{border:0}
+.kickcan-detail .section-nav>.wrap{border-block:1px solid var(--line)}
+@media(max-width:600px){.kickcan-detail .kickcan-hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.kickcan-detail .kickcan-hero-actions .button{width:100%;min-width:0;justify-content:center}}
+
+/* KickCAN overview: compact reference spacing with existing photos and colors. */
+.kickcan-detail #overview>.photo{padding:28px;border:0;border-radius:5px;margin:0 0 30px}
+.kickcan-detail #overview>.photo img{display:block;width:100%;height:380px;padding:0;object-fit:contain}
+.kickcan-detail #overview .poco-facts{gap:0 45px;margin:0 0 35px}
+.kickcan-detail #overview .poco-facts>div{grid-template-columns:95px 1fr;padding:14px 0}
+.kickcan-detail .kick-tech-stack{padding:20px 24px;margin:0 0 35px}
+.kickcan-detail .kick-tech-stack h3{letter-spacing:0;margin:0 0 12px}
+.kickcan-detail .kick-tech-stack .tags li{font-size:12px;line-height:1.8;padding:2px 8px;border-radius:0}
+.kickcan-detail .poco-context{gap:45px;padding:7px 0 0;margin:0 0 24px}
+.kickcan-detail .poco-context h3{font-size:22px;line-height:1.3;margin:0 0 15px}
+.kickcan-detail .poco-context p{line-height:1.8}
+.kickcan-detail .kick-network{margin:0;padding:25px;border-radius:5px}
+.kickcan-detail .kick-network img{max-height:440px;object-fit:contain}
+.kickcan-detail .kick-network figcaption{padding:0;margin:16px 0 0;background:transparent;border:0}
+.kickcan-detail .section-nav>.wrap{font-size:14px}
+.kickcan-detail .section-nav a{color:#666;font-weight:400}
+.kickcan-detail .section-nav a:hover,.kickcan-detail .section-nav a[aria-current="location"]{color:#111}
+.kickcan-detail .section-nav a[aria-current="location"]{font-weight:700}
+@media(max-width:800px){.kickcan-detail #overview>.photo{padding:20px}.kickcan-detail #overview>.photo img{height:300px}.kickcan-detail .poco-context{gap:24px}}
+@media(max-width:600px){.kickcan-detail .kick-network{padding:12px}.kickcan-detail .kick-tech-stack{padding:18px}.kickcan-detail #overview .poco-facts>div{grid-template-columns:85px 1fr}.kickcan-detail .section-nav>.wrap{font-size:13px;gap:12px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}.kickcan-detail .section-nav a{flex:0 0 auto;max-width:none}}
+
+/* KickCAN demo: reference proportions with the existing GIF and palette. */
+.kickcan-detail .kickcan-demo-block>h3{font-size:25px;line-height:1.3;margin:0 0 22px}
+.kickcan-detail .kickcan-demo-block>#demo{margin:0;border:0;border-radius:0}
+.kickcan-detail .kickcan-demo-block>#demo img{max-height:430px}
+.kickcan-detail .kickcan-demo-block>.poco-full-demo{margin:16px 0 0}
+
+/* KickCAN implementation: horizontal flow, followed by title/body rows. */
+.kickcan-detail .kick-implementation-layout{border-top:1px solid #e0e3e6;padding-top:36px;margin-top:36px}
+.kickcan-detail .kick-implementation-layout>.flow{margin:0 0 32px;padding:22px;background:#edf3f2;border:0;border-radius:4px}
+.kickcan-detail .kick-implementation-layout .flow-heading{border:0;padding-bottom:16px}
+.kickcan-detail .kick-implementation-layout .flow ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;padding:0;margin:0;list-style:none}
+.kickcan-detail .kick-implementation-layout .flow li{display:block;border-top:2px solid #444;padding:18px 0 0}
+.kickcan-detail .kick-implementation-layout .flow li:after{display:none}
+.kickcan-detail .kick-implementation-layout .step-no{display:block;width:auto;height:auto;background:none;border:0;border-radius:0;color:#626970;font-size:12px;font-weight:400;margin-bottom:8px}
+.kickcan-detail .kick-implementation-layout .step-copy strong{font-size:17px;line-height:1.6;margin:8px 0}
+.kickcan-detail .kick-implementation-layout .step-copy>span{font-size:14px;line-height:1.8}
+.kickcan-detail .kick-implementation-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);gap:50px;padding:0;margin:0}
+.kickcan-detail .kick-implementation-row+.kick-implementation-row{border-top:1px solid #e0e3e6;margin-top:36px;padding-top:36px}
+.kickcan-detail .kick-implementation-row header>p{margin:0 0 16px}
+.kickcan-detail .kick-implementation-row h3{font-size:26px;line-height:1.5;margin:0 0 14px}
+.kickcan-detail .kick-implementation-body>p{font-size:16px;line-height:1.9;margin:0}
+.kickcan-detail .kick-code-links{display:flex;gap:12px 24px;flex-wrap:wrap;margin-top:20px;font-size:14px}
+.kickcan-detail .kick-code-links a{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:800px){.kickcan-detail .kick-implementation-row{grid-template-columns:1fr;gap:16px}.kickcan-detail .kick-implementation-row h3{font-size:22px;margin:0}}
+@media(max-width:600px){.kickcan-detail .kick-implementation-layout .flow ol{grid-template-columns:1fr}}
+
+/* KickCAN results: reference table spacing and plain scope text. */
+.kickcan-detail #results>.kick-results-intro{font-size:18px;line-height:1.95;margin:0 0 35px}
+.kickcan-detail #results table{font-size:15px;line-height:1.8}
+.kickcan-detail #results th,.kickcan-detail #results td{padding:15px 17px}
+.kickcan-detail #results th{font-weight:700}
+.kickcan-detail #results>.scope-note{font-size:12px;line-height:1.8;margin:20px 0 0;padding:0;border:0;background:transparent;max-width:none;color:var(--muted)}
+
+/* KickCAN troubleshooting: reference title spacing and card corners. */
+.kickcan-detail .kick-trouble-case{border-radius:6px}
+.kickcan-detail .kick-trouble-case>header h3{margin:0;line-height:1.5}
+
+/* KickCAN reflection: reference typography, resource divider and next-project link. */
+.kickcan-detail .poco-reflection{padding:35px}
+.kickcan-detail .poco-reflection-row{grid-template-columns:minmax(0,1.1fr) minmax(0,1.9fr);gap:50px}
+.kickcan-detail .poco-reflection-row h3{font-size:24px}
+.kickcan-detail .poco-reflection-row p{font-size:16px;line-height:2}
+.kickcan-detail .kick-reference-links{border:0;border-block:1px solid var(--line);border-radius:0;padding:17px 0}
+.kickcan-detail .next-project{font-size:20px;font-weight:700;padding:40px 0;border-top:1px solid #222;border-bottom:0}
+.kickcan-detail .next-project>span{font-size:20px;font-weight:700;color:var(--ink)}
+@media(max-width:800px){.kickcan-detail .poco-reflection{padding:22px}.kickcan-detail .poco-reflection-row{grid-template-columns:1fr;gap:16px}.kickcan-detail .poco-reflection-row h3{font-size:21px}}
+
+/* KickCAN footer: match the approved POCO and PLC footer. */
+.kickcan-detail .kickcan-footer{display:flex;align-items:center;justify-content:flex-start;gap:24px;padding:33px 0;font-size:12px}
+.kickcan-detail .kickcan-footer-name{font-size:12px;font-weight:700;color:var(--ink);white-space:nowrap}
+.kickcan-detail .kickcan-footer>p{font-size:12px;margin:0;color:var(--muted)}
+.kickcan-detail .kickcan-footer>nav{display:flex;align-items:center;gap:24px;margin-left:auto;font-size:12px}
+@media(max-width:600px){.kickcan-detail .kickcan-footer{flex-wrap:wrap;gap:12px 18px}.kickcan-detail .kickcan-footer>nav{width:100%;margin-left:0;flex-wrap:wrap;gap:18px}}
+
+/* PLC hero: reference breadcrumb and intro spacing; period lives in overview. */
+.plc-detail .detail-hero>.breadcrumb{font-size:13px;line-height:1.8;margin:0 0 37px;color:var(--muted)}
+.plc-detail .detail-hero>.breadcrumb a{color:inherit;text-decoration:none}
+.plc-detail .detail-hero>.lead{line-height:1.8;margin:0 0 17px}
+
+/* PLC overview: reference spacing, retaining the real photo and teal backgrounds. */
+.plc-detail #overview>.photo{padding:25px;border:0;border-radius:5px;margin:0 0 30px}
+.plc-detail #overview>.photo img{padding:0;display:block}
+.plc-detail #overview>.photo figcaption{background:transparent;border:0;padding:13px 5px 0;color:#666}
+.plc-detail #overview .poco-facts{gap:0 45px;margin:0 0 24px}
+.plc-detail #overview .poco-facts>div{grid-template-columns:95px 1fr;padding:14px 0}
+.plc-detail #overview .kick-tech-stack{padding:20px 24px;margin:0 0 35px}
+.plc-detail #overview .kick-tech-stack h3{color:var(--ink);letter-spacing:0;margin:0 0 12px}
+.plc-detail #overview .poco-context{gap:45px;padding:7px 0 0;margin:0}
+.plc-detail #overview .poco-context h3{font-size:22px;line-height:1.3;margin:0 0 15px}
+.plc-detail #overview .poco-context p{color:#555;line-height:1.9;margin:0 0 16px}
+.plc-detail #overview .role-map{margin:34px 0}
+.plc-detail #overview .role-map ol{gap:25px}
+.plc-detail #overview .role-map .step-no{margin-bottom:8px}
+.plc-detail #overview .role-map .step-copy strong{margin:8px 0 12px}
+@media(max-width:800px){.plc-detail #overview>.photo{padding:16px}.plc-detail #overview .poco-context{gap:24px}}
+@media(max-width:600px){.plc-detail #overview .kick-tech-stack{padding:18px}.plc-detail #overview .poco-facts>div{grid-template-columns:85px 1fr}}
+
+/* PLC demonstration: reference heading and caption spacing, existing media/colors. */
+.plc-detail #implementation>.poco-demo-block{margin:0 0 50px}
+.plc-detail #implementation>.poco-demo-block>h3{font-size:25px;line-height:1.3;margin:0 0 22px}
+.plc-detail #implementation .plc-demo-frame{margin:0}
+.plc-detail #implementation .plc-demo-frame figcaption{font-size:13px;line-height:1.7;margin:0;padding:13px 5px 0}
+.plc-detail #implementation>.poco-demo-block>.poco-full-demo{margin:16px 0 0}
+
+/* PLC HMI: reference typography and table proportions, own implementation retained. */
+.plc-detail .plc-hmi-block{margin-top:30px;padding:45px 0 50px}
+.plc-detail .plc-hmi-block>.photo{padding:25px;margin:0 0 30px}
+.plc-detail .plc-hmi-block>.photo img{max-height:580px}
+.plc-detail .plc-hmi-block>.photo figcaption{font-size:13px;line-height:1.7;margin:0;padding:13px 5px 0}
+.plc-detail .plc-hmi-block .plc-implementation-copy{grid-template-columns:minmax(0,34%) minmax(0,1fr);gap:50px}
+.plc-detail .plc-hmi-block .plc-implementation-copy .poco-trouble-tech{font-weight:700;margin:0 0 12px}
+.plc-detail .plc-hmi-block .plc-implementation-copy h3{font-size:26px;line-height:1.5;margin:0 0 14px}
+.plc-detail .plc-hmi-table{font-size:15px;line-height:1.8}
+.plc-detail .plc-hmi-table th,.plc-detail .plc-hmi-table td{padding:15px 17px}
+.plc-detail .plc-hmi-table thead th{font-weight:700}
+.plc-detail .plc-hmi-table th:first-child{width:20%}
+@media(max-width:800px){.plc-detail .plc-hmi-block{padding:32px 0}.plc-detail .plc-hmi-block>.photo{padding:16px}.plc-detail .plc-hmi-block .plc-implementation-copy{grid-template-columns:1fr;gap:20px}.plc-detail .plc-hmi-block .plc-implementation-copy h3{font-size:22px}.plc-detail .plc-hmi-table th,.plc-detail .plc-hmi-table td{padding:12px}.plc-detail .plc-hmi-table th:first-child{width:27%}}
+
+/* PLC timing: reference spacing with the original ladder and palette. */
+.plc-detail .plc-time-block{margin-top:30px;padding:45px 0 50px}
+.plc-detail .plc-time-block>.photo{padding:25px;margin:0 0 30px}
+.plc-detail .plc-time-block>.photo img{max-height:580px}
+.plc-detail .plc-time-block>.photo figcaption{font-size:13px;line-height:1.7;margin:0;padding:13px 5px 0}
+.plc-detail .plc-time-block .plc-implementation-copy{grid-template-columns:minmax(0,34%) minmax(0,1fr);gap:50px}
+.plc-detail .plc-time-block .plc-implementation-copy .poco-trouble-tech{font-weight:700;margin:0 0 12px}
+.plc-detail .plc-time-block .plc-implementation-copy h3{font-size:26px;line-height:1.5;margin:0 0 14px}
+.plc-detail .plc-time-block .plc-implementation-copy>p{font-size:16px;line-height:1.9;color:#555;margin:0}
+@media(max-width:800px){.plc-detail .plc-time-block{padding:32px 0}.plc-detail .plc-time-block>.photo{padding:16px}.plc-detail .plc-time-block .plc-implementation-copy{grid-template-columns:1fr;gap:20px}.plc-detail .plc-time-block .plc-implementation-copy h3{font-size:22px;margin:0}}
+
+/* PLC results: reference line heights, retaining the existing colors and four results. */
+.plc-detail #results .section-title h2{line-height:1.3}
+.plc-detail #results table{line-height:1.8}
+
+/* PLC troubleshooting: reference card rhythm, retaining cases, emphasis and colors. */
+.plc-detail #troubleshooting .case{margin-top:26px}
+.plc-detail #troubleshooting .case>header{margin-bottom:6px;padding-bottom:19px}
+.plc-detail #troubleshooting .case>header .poco-trouble-tech{line-height:1.8;margin:0 0 12px}
+.plc-detail #troubleshooting .case>header h3{line-height:1.5;margin:0}
+.plc-detail #troubleshooting .lesson{margin-top:25px}
+.plc-detail #troubleshooting .lesson h3{line-height:1.7;margin:0}
+
+/* PLC reflection: reference typography and spacing, existing palette and links. */
+.plc-detail .poco-reflection{padding:35px;margin:30px 0 50px}
+.plc-detail .poco-reflection .section-title h2{line-height:1.3}
+.plc-detail .poco-reflection-row{grid-template-columns:minmax(0,1.1fr) minmax(0,1.9fr);gap:50px}
+.plc-detail .poco-reflection-row h3{font-size:24px;line-height:1.6}
+.plc-detail .poco-reflection-row p{font-size:16px;line-height:2}
+.plc-detail .poco-reflection+.next-project{margin-top:0}
+@media(max-width:800px){.plc-detail .poco-reflection{padding:22px}.plc-detail .poco-reflection-row{grid-template-columns:1fr;gap:16px}.plc-detail .poco-reflection-row h3{font-size:21px}}
+
+/* PLC mobile ending: reference spacing without changing desktop layout. */
+@media(max-width:600px){
+.plc-detail .detail-content{padding-bottom:0}
+.plc-detail .plc-footer{padding:26px 0}
+.plc-detail .poco-reflection{padding:24px 20px}
+}
+
+/* PLC mobile hero: reference spacing and subtitle size; desktop stays unchanged. */
+@media(max-width:600px){
+.plc-detail .detail-hero{padding-top:25px}
+.plc-detail .detail-hero>.breadcrumb{margin-bottom:25px}
+.plc-detail .detail-hero>.eyebrow{margin-top:0}
+.portfolio-detail.plc-detail .detail-hero>h2{font-size:23px}
+}
+
+/* PLC mobile overview: reference label gap and compact spacing only. */
+@media(max-width:600px){
+.plc-detail #overview .poco-facts>div{grid-template-columns:84px minmax(0,1fr);column-gap:12px}
+.plc-detail #overview .kick-tech-stack{padding:17px}
+.plc-detail #overview .poco-context{gap:15px}
+}
+
+/* PLC mobile flow: keep three vertical steps and adjust only spacing/type. */
+@media(max-width:600px){
+.plc-detail #overview .role-map{padding:16px}
+.plc-detail #overview .role-map li{padding-top:12px}
+.plc-detail #overview .role-map .step-no{margin-bottom:0;line-height:1.8}
+.plc-detail #overview .role-map .step-copy strong{font-size:17px;line-height:1.5;margin:12px 0 8px}
+}
+
+/* PLC mobile implementation: reference spacing; preserve desktop and content. */
+@media(max-width:600px){
+.plc-detail .plc-hmi-block,.plc-detail .plc-time-block{padding:45px 0 30px}
+.plc-detail .plc-hmi-block>.photo,.plc-detail .plc-time-block>.photo{padding:12px}
+.plc-detail .plc-hmi-block .plc-implementation-copy,.plc-detail .plc-time-block .plc-implementation-copy{gap:10px}
+.plc-detail .plc-hmi-block .plc-implementation-copy h3,.plc-detail .plc-time-block .plc-implementation-copy h3{font-size:23px}
+.plc-detail .plc-hmi-table th,.plc-detail .plc-hmi-table td{padding:13px}
+}
+
+/* Final PLC mobile table and lesson spacing. */
+@media(max-width:600px){
+.plc-detail #results table{font-size:15px}
+.plc-detail #results table th,.plc-detail #results table td{padding:13px}
+.plc-detail #troubleshooting .lesson{margin-top:20px}
+}
+/* ManyFarm: consolidated reference alignment, preserving media and petrol/teal palette. */
+.manyfarm-detail .detail-hero>.breadcrumb{font-size:13px;line-height:1.8;margin:0 0 37px;color:var(--muted)}
+.manyfarm-detail .breadcrumb a{color:inherit;text-decoration:none}
+.manyfarm-detail .detail-hero h1{line-height:1.13;margin:0 0 9px}
+.manyfarm-detail .detail-hero h2{font-size:26px;line-height:1.8;margin:0 0 26px}
+.manyfarm-detail .detail-hero .lead{line-height:1.8;margin:0 0 30px}
+.manyfarm-detail .actions .button{gap:6px;justify-content:center}
+.manyfarm-detail .section-nav{border:0}
+.manyfarm-detail .section-nav>.wrap{border-block:1px solid var(--line);font-size:14px}
+.manyfarm-detail .scene-grid .photo{border:0;border-radius:0;background:transparent}
+.manyfarm-detail .scene-grid img{border-radius:5px}
+.manyfarm-detail .scene-grid figcaption{padding:12px 0 0;background:transparent;border:0;font-size:13px;line-height:1.7}
+.manyfarm-detail .full-process-video{border:0;background:transparent}
+.manyfarm-detail .full-process-video figcaption{padding:12px 0;background:transparent;border:0;font-size:13px;line-height:1.7}
+.manyfarm-detail #implementation>.flow{padding:22px;border:0;border-radius:4px;background:#edf3f2;margin:0 0 30px}
+.manyfarm-detail #implementation>.flow .flow-heading{border:0;padding-bottom:16px}
+.manyfarm-detail #implementation>.flow ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.manyfarm-detail #implementation>.flow li{display:block;border-top:2px solid #444;padding:18px 0 0}
+.manyfarm-detail #implementation>.flow li:after{display:none}
+.manyfarm-detail #implementation>.flow .step-no{display:block;width:auto;height:auto;border:0;border-radius:0;background:none;color:var(--muted);font-size:12px;font-weight:400;margin-bottom:8px}
+.manyfarm-detail #implementation>.flow .step-copy strong{font-size:17px;line-height:1.5;margin:12px 0 8px}
+.manyfarm-detail #implementation>.flow .step-copy>span{font-size:14px;line-height:1.8}
+.manyfarm-detail #results table{font-size:15px;line-height:1.8}
+.manyfarm-detail #results table th,.manyfarm-detail #results table td{padding:15px 17px}
+.manyfarm-detail .mf-issue-card{padding:28px;margin:28px 0 48px}
+.manyfarm-detail .mf-issue-step{display:grid;grid-template-columns:170px minmax(0,1fr);gap:0 22px;padding:22px;margin:12px 0 0;border:1px solid var(--line);border-radius:8px;background:#f8fafb}
+.manyfarm-detail .mf-issue-step h4{margin:0;font-size:17px;line-height:1.8}
+.manyfarm-detail .mf-issue-step p{font-size:15px;line-height:1.9}
+.manyfarm-detail .mf-issue-step:nth-last-child(2){background:#eff5f7}
+.manyfarm-detail .mf-issue-step:last-child{background:#edf3f2}
+.manyfarm-detail .mf-reflection{padding:35px;margin:30px 0 50px}
+.manyfarm-detail .mf-reflection-cards article{padding:24px}
+.manyfarm-detail .mf-reflection-cards h3{line-height:1.55;margin:14px 0}
+.manyfarm-detail .mf-reflection-cards article>p:last-child{font-size:15px;line-height:1.9}
+.manyfarm-detail .mf-reflection-cards .mf-reflection-label{margin:0;font-size:12px}
+.manyfarm-detail .next-project{margin:0;padding:40px 0;border-top:1px solid #222;border-bottom:0;font-size:20px;font-weight:700}
+.manyfarm-detail .next-project>span:first-child{font-size:inherit;font-weight:700;color:var(--ink)}
+.manyfarm-detail .mf-footer{display:flex;align-items:center;justify-content:flex-start;gap:24px;padding:33px 0;font-size:12px}
+.manyfarm-detail .mf-footer-name{font-size:12px;font-weight:700;white-space:nowrap;color:var(--ink)}
+.manyfarm-detail .mf-footer>p{font-size:12px;margin:0;color:var(--muted)}
+.manyfarm-detail .mf-footer>nav{display:flex;align-items:center;gap:24px;margin-left:auto;font-size:12px}
+@media(max-width:800px){.manyfarm-detail .mf-issue-step{grid-template-columns:1fr;gap:12px}.manyfarm-detail .mf-reflection-cards{grid-template-columns:1fr}}
+@media(max-width:600px){
+.manyfarm-detail .detail-hero{padding-top:25px}
+.manyfarm-detail .detail-hero>.breadcrumb{margin-bottom:25px}
+.manyfarm-detail .detail-hero>.eyebrow{margin-top:0}
+.portfolio-detail.manyfarm-detail .detail-hero>h2{font-size:23px}
+.manyfarm-detail .section-nav>.wrap{font-size:13px;gap:12px;flex-wrap:wrap}
+.manyfarm-detail #implementation>.flow{padding:16px}
+.manyfarm-detail #implementation>.flow ol{grid-template-columns:1fr}
+.manyfarm-detail #implementation>.flow li{padding-top:12px}
+.manyfarm-detail #implementation>.flow .step-no{margin-bottom:0}
+.manyfarm-detail #results table{font-size:15px}
+.manyfarm-detail #results table th,.manyfarm-detail #results table td{padding:13px}
+.manyfarm-detail .mf-issue-card{padding:18px}
+.manyfarm-detail .mf-reflection{padding:24px 20px}
+.manyfarm-detail .next-project{font-size:17px}
+.manyfarm-detail .detail-content{padding-bottom:0}
+.manyfarm-detail .mf-footer{flex-wrap:wrap;gap:12px 18px;padding:26px 0}
+.manyfarm-detail .mf-footer>nav{width:100%;margin-left:0;flex-wrap:wrap;gap:18px}
+}
+/* Shared team architecture and illustrative 3D process. */
+.manyfarm-detail .mf-architecture{margin:30px 0 0;padding:20px 24px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.manyfarm-detail .mf-architecture summary{cursor:pointer;font-size:15px;font-weight:700;color:var(--ink)}
+.manyfarm-detail .mf-architecture figure{margin:24px 0 0}
+.manyfarm-detail .mf-architecture img{display:block;width:100%;height:auto;border-radius:5px}
+.manyfarm-detail .mf-architecture figcaption{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:13px;line-height:1.8;color:var(--muted)}
+.manyfarm-detail .mf-architecture figcaption a{color:var(--ink)}
+.manyfarm-detail .mf-simulation{border-top:1px solid var(--line);padding:55px 0;scroll-margin-top:160px}
+.manyfarm-detail .mf-simulation h3{font-size:23px;line-height:1.5;margin:0 0 24px}
+.manyfarm-detail .mf-simulation iframe{display:block;width:100%;height:710px;border:1px solid var(--line);border-radius:12px;background:#edf3f2}
+.manyfarm-detail .mf-simulation>p{font-size:13px;line-height:1.8;color:var(--muted);margin:16px 0 0}
+@media(max-width:600px){.manyfarm-detail .mf-architecture{padding:17px}.manyfarm-detail .mf-simulation{padding:40px 0}.manyfarm-detail .mf-simulation h3{font-size:21px}.manyfarm-detail .mf-simulation iframe{height:530px}}
+/* POCO complete desktop/mobile alignment; own content and palette retained. */
+.poco-detail .poco-facts>div{grid-template-columns:84px minmax(0,1fr);column-gap:12px;padding:0 0 14px;margin-bottom:14px}
+.poco-detail .poco-command-copy h3{font-size:26px}
+.poco-detail .poco-hardware-visual figcaption,.poco-detail .poco-settings-implementation>.poco-settings-photo figcaption,.poco-detail .poco-demo-scene figcaption{font-size:13px;text-align:left;align-self:stretch}
+.poco-detail .poco-personal-results{width:100%;border-collapse:collapse;font-size:15px;line-height:1.8;margin:28px 0 32px;table-layout:fixed}
+.poco-detail .poco-personal-results caption{text-align:left;font-size:18px;font-weight:700;color:var(--ink);margin-bottom:16px}
+.poco-detail .poco-personal-results th,.poco-detail .poco-personal-results td{padding:15px 17px;text-align:left;overflow-wrap:anywhere}
+.poco-detail .poco-personal-results th:first-child{width:28%}
+.poco-detail .poco-personal-results tbody th{background:transparent;color:var(--ink);font-weight:600}
+.poco-detail .poco-report figure{margin-bottom:0}
+.poco-detail .poco-report figcaption{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;text-align:left}
+.poco-detail .poco-report figcaption a{color:var(--ink)}
+.poco-detail .poco-reflection{margin:30px 0 50px}
+.poco-detail .poco-reflection+.next-project{margin-top:0}
+@media(max-width:800px){.poco-detail .poco-command-copy{gap:10px}.poco-detail .poco-command-copy h3{font-size:23px}}
+@media(max-width:600px){
+.poco-detail .detail-hero{padding-top:25px}
+.poco-detail .detail-hero>.breadcrumb{margin-bottom:25px}
+.poco-detail .detail-hero>.eyebrow{margin-top:0}
+.portfolio-detail.poco-detail .detail-hero>h2{font-size:23px}
+.poco-detail .poco-user-flow{grid-template-columns:repeat(2,minmax(0,1fr));padding:16px;gap:18px}
+.poco-detail .poco-reflection{padding:24px 20px}
+.poco-detail .next-project,.poco-detail .next-project>span{font-size:17px}
+.poco-detail .detail-content{padding-bottom:0}
+.poco-detail .poco-footer{padding:26px 0}
+.poco-detail .poco-personal-results th,.poco-detail .poco-personal-results td{padding:13px}
+.poco-detail .poco-personal-results th:first-child{width:31%}
+}
+/* KickCAN consolidated reference spacing; Node 1 content, media and palette retained. */
+.kickcan-detail #overview .poco-facts>div{grid-template-columns:84px minmax(0,1fr);column-gap:12px;padding:0 0 14px;margin-bottom:14px}
+.kickcan-detail .poco-context{margin-bottom:0}
+.kickcan-detail .kick-network figcaption{font-size:13px;line-height:1.7;margin:0;padding:13px 5px 0}
+.kickcan-detail .kick-implementation-row{grid-template-columns:minmax(0,34%) minmax(0,1fr)}
+.kickcan-detail .kick-trouble-case{margin-top:26px}
+.kickcan-detail .kick-trouble-case>header{margin-bottom:6px;padding-bottom:19px}
+.kickcan-detail .kick-trouble-case .lesson{margin-top:25px}
+.kickcan-detail .poco-reflection{margin:30px 0 50px}
+.kickcan-detail .poco-reflection+.next-project{margin-top:0}
+@media(max-width:800px){
+.kickcan-detail .kick-implementation-row{grid-template-columns:1fr;gap:10px}
+.kickcan-detail .kick-implementation-row h3{font-size:23px}
+}
+@media(max-width:600px){
+.kickcan-detail .detail-hero{padding-top:25px}
+.kickcan-detail .detail-hero>.breadcrumb{margin-bottom:25px}
+.portfolio-detail.kickcan-detail .detail-hero>h2{font-size:23px}
+.kickcan-detail .kick-tech-stack{padding:17px}
+.kickcan-detail .poco-context{gap:15px}
+.kickcan-detail .kick-implementation-layout>.flow{padding:16px}
+.kickcan-detail #results>.kick-results-intro{font-size:16px}
+.kickcan-detail #results th,.kickcan-detail #results td{padding:13px}
+.kickcan-detail .kick-trouble-case .lesson{margin-top:20px}
+.kickcan-detail .poco-reflection{padding:24px 20px}
+.kickcan-detail .next-project,.kickcan-detail .next-project>span{font-size:17px}
+.kickcan-detail .detail-content{padding-bottom:0}
+.kickcan-detail .kickcan-footer{padding:26px 0}
+}
+/* PLC final audit: hero eyebrow, fact spacing and mobile list-link size only. */
+.plc-detail .detail-hero>.eyebrow{margin-top:0}
+.plc-detail #overview .poco-facts>div{grid-template-columns:84px minmax(0,1fr);column-gap:12px;padding:0 0 14px;margin-bottom:14px}
+@media(max-width:600px){.plc-detail .next-project,.plc-detail .next-project>span{font-size:17px}}
+@media(max-width:600px){.plc-detail .next-project>span:first-child,.plc-detail .next-project>span:last-child{font-size:17px}}
+/* Main-page audit: align mobile header/timeline and capability-card rhythm only. */
+.portfolio-home .capabilities .experience-projects{margin:0;font-size:13px;line-height:1.7}
+@media screen and (max-width:700px){
+.portfolio-home .site-header{min-height:0}
+.portfolio-home .journey-section{padding:36px 0}
+.portfolio-home .timeline{padding-left:20px}
+}
+@media screen and (max-width:700px){.portfolio-home .site-header{row-gap:6px}}

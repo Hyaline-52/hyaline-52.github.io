@@ -1,0 +1,47 @@
+/* PDF-only content fit; original palette, A4 sheets and window.print stay intact. */
+.print-view .identity .role{max-width:105mm;font-size:12pt}
+.print-view .featured-grid{padding:3mm;gap:4mm}
+.print-view .featured-grid .scope{line-height:1.5}
+.print-view .verification{margin-top:4mm}
+.print-view .verification>div{padding:3mm}
+.print-view .verification li{font-size:8.5pt;margin:2mm 0;line-height:1.5}
+.print-view .verification .small{line-height:1.5}
+.print-view .print-projects .project{padding-top:3mm;margin-bottom:3mm;gap:4mm}
+.print-view .print-projects .project h3{font-size:16pt}
+.print-view .print-projects .project-links{gap:1mm 3mm;margin:1.5mm 0}
+.print-view .print-projects .detail-body>p:first-child{line-height:1.45;margin:1.5mm 0}
+.print-view .print-projects .result{line-height:1.45}
+.print-view .print-projects figcaption{font-size:7pt}
+.print-view .case-groups{display:grid;grid-template-columns:1fr 1fr;gap:5mm 6mm;align-items:start}
+.print-view .case-group{padding:0;border:0;break-inside:avoid}
+.print-view .case-group>h3{font-size:13pt;color:#164e63;border-bottom:1pt solid #087f85;padding-bottom:2mm;margin-bottom:2mm}
+.print-view .compact-case{padding:2mm 0;border:0;border-bottom:.5pt solid var(--line)}
+.print-view .compact-case h4{font-size:9.5pt;margin:0 0 1.5mm}
+.print-view .compact-case p{font-size:8.5pt;line-height:1.5;margin:1mm 0}
+.print-view .compact-case p b{color:#087f85;margin-right:1mm}
+.print-view .compact-case a{font-size:7.5pt}
+.print-view #history .pdf-reflections{margin-top:7mm;padding:4mm;background:#e8f4f3}
+.print-view #history .pdf-reflections h3{font-size:12pt;color:#164e63;margin-bottom:2mm}
+.print-view #history .pdf-reflections p{font-size:9pt;line-height:1.5;margin:2mm 0}
+.print-view #history .closing{margin-top:6mm;padding-top:4mm}
+.print-view #history .closing h3{font-size:17pt}
+
+/* Readability revision: 9pt project text and 9.5pt case text. */
+.print-view .print-projects .project{grid-template-columns:34mm 1fr;gap:4mm;padding-top:2.5mm;margin-bottom:2.5mm}
+.print-view .print-projects .project p,.print-view .print-projects .detail-body>p:first-child{font-size:9pt;line-height:1.45}
+.print-view .print-projects .project-content>p.project-summary{display:block;font-size:9pt;line-height:1.4;margin:1mm 0 2mm}
+.print-view .print-projects .project .metadata{font-size:8pt;margin:1mm 0}
+.print-view .print-projects .project-links{font-size:8pt;margin:1mm 0;gap:1mm 3mm}
+.print-view .print-projects .personal{margin:1mm 0;font-size:8.5pt;line-height:1.4}
+.print-view .print-projects .result{padding:2mm;margin:1.5mm 0 0}
+.print-view .print-projects .result p{margin:0;font-size:9pt;line-height:1.45}
+.print-view .print-projects .result .team-result{margin-top:1.5mm}
+.print-view .print-projects .project .label{font-size:8pt;letter-spacing:0}
+.print-view .case-groups{gap:4mm 6mm}
+.print-view .compact-case p{font-size:9.5pt;line-height:1.45;margin:1mm 0}
+.print-view .compact-case h4{font-size:10pt}
+.print-view .compact-case{padding:1.5mm 0}
+.print-view .compact-case a{font-size:8pt}
+
+.print-view .case-column .case-group+.case-group{margin-top:5mm}
+.print-view .print-projects .project-media .metadata{font-size:8pt;line-height:1.5;margin:3mm 0;text-align:center}
