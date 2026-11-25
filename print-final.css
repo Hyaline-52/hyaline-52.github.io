@@ -45,3 +45,22 @@
 
 .print-view .case-column .case-group+.case-group{margin-top:5mm}
 .print-view .print-projects .project-media .metadata{font-size:8pt;line-height:1.5;margin:3mm 0;text-align:center}
+
+/* Awards use the same title, metadata and divider hierarchy as the rest of the PDF. */
+.print-view #history .timeline>div{padding:1.5mm 0}
+.print-view #history>h3.spaced{margin-top:3mm}
+.print-view #history .honors-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:3mm;font-size:9pt;line-height:1.45}
+.print-view #history .honor-date{width:20mm}
+.print-view #history .honor-name{width:94mm}
+.print-view #history .honor-org{width:auto}
+.print-view #history .honors-table th{padding:1.5mm 2mm;text-align:left;background:#e8f4f3;color:#164e63;font-size:9pt;border-bottom:1pt solid #087f85}
+.print-view #history .honors-table td{padding:1.2mm 2mm;vertical-align:top;border-bottom:.5pt solid var(--line)}
+.print-view #history .honors-table td:first-child{white-space:nowrap;color:var(--muted)}
+.print-view #history .honors-table td:nth-child(2){font-size:9.5pt}
+.print-view #history .honors-table td:last-child{color:var(--muted)}
+.print-view #history .pdf-reflections{margin-top:4mm;padding:3mm}
+.print-view #history .closing{margin-top:4mm;padding-top:3mm}
+.print-view #history .closing h3{font-size:12pt;line-height:1.5}
+.print-view #history .closing h3 br{display:none}
+
+.print-view #history .pdf-reflections p{margin:1.5mm 0}
